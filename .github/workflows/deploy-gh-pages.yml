@@ -27,7 +27,9 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npm run build:pages
+        env:
+          VITE_BASE_PATH: /PaulBrothersHeatingandAir/
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4

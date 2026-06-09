@@ -22,11 +22,11 @@ npm run build
 npm run preview
 ```
 
-## Deploy
+## Live preview (GitHub Pages)
 
-This project is set up for deployment to [GitHub](https://github.com/Dbaileyfam/PaulBrothersHeatingandAir.git).
+**https://dbaileyfam.github.io/PaulBrothersHeatingandAir/**
 
-After pushing to GitHub, connect the repo to your hosting provider (Vercel, Netlify, GitHub Pages, etc.) and set the build command to `npm run build` with output directory `dist`.
+This is separate from the existing site at [paulbrothersutah.com](https://paulbrothersutah.com). When you're ready to switch domains later, add a `public/CNAME` and update DNS.
 
 ## Business info
 
