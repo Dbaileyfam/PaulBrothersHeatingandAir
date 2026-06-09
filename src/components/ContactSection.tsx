@@ -2,23 +2,25 @@ import { Mail, MapPin, Phone, MessageSquare } from "lucide-react";
 import { site } from "@/content/site";
 import { ContactButtons } from "./ContactButtons";
 
-export function Contact() {
+type ContactSectionProps = {
+  headline?: string;
+  intro?: string;
+};
+
+export function ContactSection({
+  headline = "Schedule HVAC Service in Midvale Today",
+  intro = "Need AC repair, furnace service, or a free estimate? Call or text Paul Brothers Heating & Air — we respond quickly and serve all of Salt Lake County.",
+}: ContactSectionProps) {
   return (
-    <section id="contact" className="py-16 sm:py-20">
+    <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-pb-sky-light to-white border border-pb-border">
+        <div className="overflow-hidden rounded-3xl border border-pb-border bg-gradient-to-br from-pb-sky-light to-white">
           <div className="grid lg:grid-cols-2">
             <div className="p-8 sm:p-10 lg:p-12">
-              <h2 className="section-heading">
-                Schedule HVAC Service in Midvale Today
-              </h2>
-              <p className="section-subheading">
-                Need AC repair, furnace service, or a free estimate? Call or
-                text Paul Brothers Heating &amp; Air — we respond quickly and
-                serve all of Salt Lake County.
-              </p>
+              <h2 className="section-heading">{headline}</h2>
+              <p className="section-subheading">{intro}</p>
               <div className="mt-8">
-                <ContactButtons size="lg" layout="stack" className="max-w-sm" />
+                <ContactButtons size="lg" layout="stack" showEstimate className="max-w-sm" />
               </div>
             </div>
 
@@ -30,10 +32,7 @@ export function Contact() {
                     href={site.phoneHref}
                     className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
                   >
-                    <Phone
-                      className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange"
-                      aria-hidden
-                    />
+                    <Phone className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
                       <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
                         Call
@@ -47,10 +46,7 @@ export function Contact() {
                     href={site.textHref}
                     className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
                   >
-                    <MessageSquare
-                      className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange"
-                      aria-hidden
-                    />
+                    <MessageSquare className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
                       <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
                         Text
@@ -64,10 +60,7 @@ export function Contact() {
                     href={site.emailHref}
                     className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
                   >
-                    <Mail
-                      className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange"
-                      aria-hidden
-                    />
+                    <Mail className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
                       <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
                         Email
@@ -83,10 +76,7 @@ export function Contact() {
                     rel="noopener noreferrer"
                     className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
                   >
-                    <MapPin
-                      className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange"
-                      aria-hidden
-                    />
+                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
                       <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
                         Address

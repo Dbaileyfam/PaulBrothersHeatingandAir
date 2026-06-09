@@ -1,10 +1,15 @@
-import { Phone, MessageSquare } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Phone, MessageSquare, ClipboardCheck } from "lucide-react";
 import { site } from "@/content/site";
+import { routes } from "@/lib/routes";
 
 type ContactButtonsProps = {
   size?: "sm" | "md" | "lg";
   className?: string;
   layout?: "row" | "stack";
+  showEstimate?: boolean;
+  /** Use compact labels (Call Now / Text Us) vs showing phone numbers */
+  compact?: boolean;
 };
 
 const sizeStyles = {
@@ -17,9 +22,14 @@ export function ContactButtons({
   size = "md",
   className = "",
   layout = "row",
+  showEstimate = false,
+  compact = true,
 }: ContactButtonsProps) {
   const layoutClass =
     layout === "stack" ? "flex flex-col gap-3 w-full" : "flex flex-wrap gap-3";
+
+  const callLabel = compact ? "Call Now" : `Call ${site.phone}`;
+  const textLabel = compact ? "Text Us" : `Text ${site.text}`;
 
   return (
     <div className={`${layoutClass} ${className}`}>
@@ -28,15 +38,24 @@ export function ContactButtons({
         className={`inline-flex items-center justify-center gap-2 rounded-lg bg-pb-orange font-semibold text-white shadow-md transition hover:bg-pb-orange-dark ${sizeStyles[size]}`}
       >
         <Phone className="h-4 w-4 shrink-0" aria-hidden />
-        Call {site.phone}
+        {callLabel}
       </a>
       <a
         href={site.textHref}
         className={`inline-flex items-center justify-center gap-2 rounded-lg border-2 border-pb-navy bg-white font-semibold text-pb-navy transition hover:bg-pb-gray-light ${sizeStyles[size]}`}
       >
         <MessageSquare className="h-4 w-4 shrink-0" aria-hidden />
-        Text {site.text}
+        {textLabel}
       </a>
+      {showEstimate ? (
+        <Link
+          to={routes.contactUs}
+          className={`inline-flex items-center justify-center gap-2 rounded-lg bg-pb-navy font-semibold text-white transition hover:bg-pb-navy-light ${sizeStyles[size]}`}
+        >
+          <ClipboardCheck className="h-4 w-4 shrink-0" aria-hidden />
+          Get a Free Estimate
+        </Link>
+      ) : null}
     </div>
   );
 }

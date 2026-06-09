@@ -4,10 +4,7 @@ import { ContactButtons } from "./ContactButtons";
 
 export function Hero() {
   return (
-    <section
-      id="home"
-      className="relative overflow-hidden bg-gradient-to-br from-pb-navy via-pb-navy-light to-pb-sky text-white"
-    >
+    <section className="relative overflow-hidden bg-gradient-to-br from-pb-navy via-pb-navy-light to-pb-sky text-white">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white blur-3xl" />
         <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-pb-orange blur-3xl" />
@@ -27,15 +24,14 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            HVAC Services in Midvale, Utah
+            {site.hero.headline}
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-white/90 sm:text-xl">
-            {site.description} Serving homeowners and businesses across Salt
-            Lake County with AC repair, furnace repair, installation, and more.
+            {site.hero.subheadline}
           </p>
 
           <div className="mt-8">
-            <ContactButtons size="lg" />
+            <ContactButtons size="lg" showEstimate />
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/80">

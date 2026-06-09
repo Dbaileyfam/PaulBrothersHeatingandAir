@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Award,
   Clock,
@@ -7,6 +8,7 @@ import {
   ClipboardCheck,
 } from "lucide-react";
 import { site } from "@/content/site";
+import { routes } from "@/lib/routes";
 
 const icons = [
   Heart,
@@ -17,9 +19,13 @@ const icons = [
   Award,
 ];
 
-export function About() {
+type AboutSectionProps = {
+  compact?: boolean;
+};
+
+export function AboutSection({ compact = false }: AboutSectionProps) {
   return (
-    <section id="about" className="bg-pb-navy py-16 text-white sm:py-20">
+    <section className="bg-pb-navy py-16 text-white sm:py-20">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -28,9 +34,16 @@ export function About() {
           <p className="mt-4 text-lg leading-relaxed text-white/80">
             As a family-owned HVAC company in Midvale, we combine technical
             expertise with honest, neighborly service. You get clear
-            communication, fair pricing, and work done right the first time —
-            backed by free estimates and second opinions when you need them.
+            communication, fair pricing, and work done right the first time.
           </p>
+          {compact ? (
+            <Link
+              to={routes.aboutUs}
+              className="mt-6 inline-flex text-sm font-semibold text-pb-orange transition hover:text-white"
+            >
+              Learn more about us →
+            </Link>
+          ) : null}
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

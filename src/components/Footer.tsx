@@ -1,4 +1,6 @@
-import { site } from "@/content/site";
+import { Link } from "react-router-dom";
+import { site, serviceNavLinks, navLinks } from "@/content/site";
+import { routes } from "@/lib/routes";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -6,7 +8,7 @@ export function Footer() {
   return (
     <footer className="border-t border-pb-border bg-pb-navy py-10 text-white/70">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="text-lg font-bold text-white">{site.name}</p>
             <p className="mt-2 text-sm leading-relaxed">
@@ -17,29 +19,31 @@ export function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-white">
-              Quick Links
+              Company
             </p>
             <ul className="mt-3 space-y-2 text-sm">
-              <li>
-                <a href="#services" className="transition hover:text-white">
-                  HVAC Services
-                </a>
-              </li>
-              <li>
-                <a href="#service-areas" className="transition hover:text-white">
-                  Service Areas
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="transition hover:text-white">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="transition hover:text-white">
-                  Contact
-                </a>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.to}>
+                  <Link to={link.to} className="transition hover:text-white">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-white">
+              Services
+            </p>
+            <ul className="mt-3 space-y-2 text-sm">
+              {serviceNavLinks.map((link) => (
+                <li key={link.to}>
+                  <Link to={link.to} className="transition hover:text-white">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -50,7 +54,7 @@ export function Footer() {
             <ul className="mt-3 space-y-2 text-sm">
               <li>
                 <a href={site.phoneHref} className="transition hover:text-white">
-                  {site.phone}
+                  Call: {site.phone}
                 </a>
               </li>
               <li>
@@ -64,6 +68,11 @@ export function Footer() {
                 </a>
               </li>
               <li>{site.address.full}</li>
+              <li>
+                <Link to={routes.contactUs} className="transition hover:text-white">
+                  Get a Free Estimate
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

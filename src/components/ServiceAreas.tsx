@@ -56,7 +56,7 @@ export function ServiceAreas() {
               happy to confirm service availability in your area.
             </p>
             <div className="mt-6">
-              <ContactButtons />
+              <ContactButtons showEstimate />
             </div>
           </div>
         </div>
