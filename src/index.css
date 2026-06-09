@@ -38,4 +38,123 @@
   .section-subheading {
     @apply mt-3 max-w-2xl text-lg text-pb-gray;
   }
+
+  .pb-ember {
+    animation: pb-ember-rise linear infinite;
+    opacity: 0;
+  }
+
+  .pb-snowflake {
+    animation: pb-snow-fall linear infinite;
+    opacity: 0;
+  }
+
+  .pb-logo-glow-warm {
+    animation: pb-warm-pulse 3s ease-in-out infinite;
+  }
+
+  .pb-logo-glow-cool {
+    animation: pb-cool-pulse 3.5s ease-in-out infinite;
+  }
+
+  .pb-logo-shimmer {
+    background: linear-gradient(
+      105deg,
+      transparent 35%,
+      rgba(255, 255, 255, 0.08) 45%,
+      rgba(255, 255, 255, 0.14) 50%,
+      rgba(255, 255, 255, 0.08) 55%,
+      transparent 65%
+    );
+    background-size: 200% 100%;
+    animation: pb-logo-shimmer 6s ease-in-out infinite;
+  }
+}
+
+@keyframes pb-ember-rise {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-120px) translateX(8px) scale(0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pb-snow-fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(60px) translateX(12px) rotate(180deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(130px) translateX(-6px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pb-warm-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translateX(-50%) scale(1.08);
+  }
+}
+
+@keyframes pb-cool-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateX(-50%) scale(1.06);
+  }
+}
+
+@keyframes pb-logo-shimmer {
+  0%,
+  100% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pb-ember,
+  .pb-snowflake,
+  .pb-logo-glow-warm,
+  .pb-logo-glow-cool,
+  .pb-logo-shimmer {
+    animation: none !important;
+    opacity: 0;
+  }
+
+  .pb-logo-glow-warm {
+    opacity: 0.4;
+  }
+
+  .pb-logo-glow-cool {
+    opacity: 0.35;
+  }
 }
