@@ -24,9 +24,9 @@ export function BlogPage() {
       </section>
 
       <section className="py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl rounded-2xl border border-pb-border bg-pb-gray-light px-6 py-12 text-center">
-          <p className="text-lg font-semibold text-pb-navy">Articles coming soon</p>
-          <p className="mt-3 text-pb-gray">
+        <div className="pb-card mx-auto max-w-3xl px-6 py-12 text-center">
+          <p className="text-lg font-semibold text-white">Articles coming soon</p>
+          <p className="mt-3 text-white/70">
             Check back for HVAC maintenance tips, seasonal advice, and local
             heating and cooling insights for Midvale and Salt Lake County.
           </p>

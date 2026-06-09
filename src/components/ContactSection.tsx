@@ -14,7 +14,7 @@ export function ContactSection({
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="overflow-hidden rounded-3xl border border-pb-border bg-gradient-to-br from-pb-sky-light to-white">
+        <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-pb-navy-light/80 to-pb-navy/90 shadow-xl shadow-black/30">
           <div className="grid lg:grid-cols-2">
             <div className="p-8 sm:p-10 lg:p-12">
               <h2 className="section-heading">{headline}</h2>
@@ -24,17 +24,17 @@ export function ContactSection({
               </div>
             </div>
 
-            <div className="border-t border-pb-border bg-white p-8 sm:p-10 lg:border-l lg:border-t-0 lg:p-12">
-              <h3 className="text-lg font-bold text-pb-navy">Contact Info</h3>
+            <div className="border-t border-white/10 bg-pb-navy-light/40 p-8 sm:p-10 lg:border-l lg:border-t-0 lg:p-12">
+              <h3 className="text-lg font-bold text-white">Contact Info</h3>
               <ul className="mt-6 space-y-5">
                 <li>
                   <a
                     href={site.phoneHref}
-                    className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
+                    className="group flex items-start gap-3 text-white transition hover:text-sky-300"
                   >
                     <Phone className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
-                      <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-white/50">
                         Call
                       </span>
                       <span className="font-semibold">{site.phone}</span>
@@ -44,11 +44,11 @@ export function ContactSection({
                 <li>
                   <a
                     href={site.textHref}
-                    className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
+                    className="group flex items-start gap-3 text-white transition hover:text-sky-300"
                   >
                     <MessageSquare className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
-                      <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-white/50">
                         Text
                       </span>
                       <span className="font-semibold">{site.text}</span>
@@ -58,11 +58,11 @@ export function ContactSection({
                 <li>
                   <a
                     href={site.emailHref}
-                    className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
+                    className="group flex items-start gap-3 text-white transition hover:text-sky-300"
                   >
                     <Mail className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
-                      <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-white/50">
                         Email
                       </span>
                       <span className="font-semibold">{site.email}</span>
@@ -74,11 +74,11 @@ export function ContactSection({
                     href={site.address.mapsHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-start gap-3 text-pb-navy transition hover:text-pb-sky"
+                    className="group flex items-start gap-3 text-white transition hover:text-sky-300"
                   >
                     <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
-                      <span className="block text-xs font-semibold uppercase tracking-wide text-pb-gray">
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-white/50">
                         Address
                       </span>
                       <span className="font-semibold">{site.address.full}</span>

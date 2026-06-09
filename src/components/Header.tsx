@@ -7,8 +7,8 @@ import { ContactButtons } from "./ContactButtons";
 
 function navClass(isActive: boolean) {
   return isActive
-    ? "font-semibold text-pb-navy"
-    : "font-medium text-pb-gray transition hover:text-pb-navy";
+    ? "font-semibold text-white"
+    : "font-medium text-white/70 transition hover:text-white";
 }
 
 export function Header() {
@@ -16,13 +16,13 @@ export function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-pb-border bg-white/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-pb-navy/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:py-4">
         <Link to={routes.home} className="group flex min-w-0 flex-col">
-          <span className="truncate text-lg font-bold text-pb-navy sm:text-xl">
+          <span className="truncate text-lg font-bold text-white sm:text-xl">
             {site.name}
           </span>
-          <span className="hidden text-xs font-medium text-pb-sky sm:block">
+          <span className="hidden text-xs font-medium text-sky-300 sm:block">
             Midvale, Utah · Salt Lake County
           </span>
         </Link>
@@ -42,13 +42,13 @@ export function Header() {
           <div className="relative group">
             <button
               type="button"
-              className="inline-flex items-center gap-1 text-sm font-medium text-pb-gray transition hover:text-pb-navy"
+              className="inline-flex items-center gap-1 text-sm font-medium text-white/70 transition hover:text-white"
               aria-haspopup="true"
             >
               Services
               <ChevronDown className="h-4 w-4" aria-hidden />
             </button>
-            <div className="invisible absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-pb-border bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
+            <div className="invisible absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-white/10 bg-pb-navy-light py-2 opacity-0 shadow-xl shadow-black/40 transition group-hover:visible group-hover:opacity-100">
               {serviceNavLinks.map((link) => (
                 <NavLink
                   key={link.to}
@@ -80,7 +80,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-pb-border text-pb-navy lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
@@ -93,7 +93,7 @@ export function Header() {
       {open ? (
         <nav
           id="mobile-menu"
-          className="border-t border-pb-border bg-white px-4 py-4 lg:hidden"
+          className="border-t border-white/10 bg-pb-navy-light/95 px-4 py-4 lg:hidden"
           aria-label="Mobile"
         >
           <div className="flex flex-col gap-1">
@@ -112,7 +112,7 @@ export function Header() {
             ))}
             <button
               type="button"
-              className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium text-pb-navy"
+              className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium text-white"
               onClick={() => setServicesOpen((v) => !v)}
             >
               Services
@@ -139,7 +139,7 @@ export function Header() {
                 ))
               : null}
           </div>
-          <div className="mt-4 border-t border-pb-border pt-4">
+          <div className="mt-4 border-t border-white/10 pt-4">
             <ContactButtons layout="stack" showEstimate />
           </div>
         </nav>

@@ -13,7 +13,7 @@ export function CTABanner({
   subtext = "Call, text, or request a free estimate — we serve all of Salt Lake County.",
 }: CTABannerProps) {
   return (
-    <section className="bg-pb-navy py-12 text-white sm:py-16">
+    <section className="border-t border-white/10 bg-pb-navy-light/30 py-12 text-white sm:py-16">
       <div className="mx-auto max-w-6xl px-4 text-center">
         <h2 className="text-2xl font-bold sm:text-3xl">{headline}</h2>
         <p className="mx-auto mt-3 max-w-2xl text-white/80">{subtext}</p>

@@ -42,7 +42,7 @@ export function ContactButtons({
       </a>
       <a
         href={site.textHref}
-        className={`inline-flex items-center justify-center gap-2 rounded-lg border-2 border-pb-navy bg-white font-semibold text-pb-navy transition hover:bg-pb-gray-light ${sizeStyles[size]}`}
+        className={`inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/25 bg-white/10 font-semibold text-white transition hover:bg-white/20 ${sizeStyles[size]}`}
       >
         <MessageSquare className="h-4 w-4 shrink-0" aria-hidden />
         {textLabel}
@@ -50,7 +50,7 @@ export function ContactButtons({
       {showEstimate ? (
         <Link
           to={routes.contactUs}
-          className={`inline-flex items-center justify-center gap-2 rounded-lg bg-pb-navy font-semibold text-white transition hover:bg-pb-navy-light ${sizeStyles[size]}`}
+          className={`inline-flex items-center justify-center gap-2 rounded-lg bg-pb-sky font-semibold text-white transition hover:bg-pb-navy-light ${sizeStyles[size]}`}
         >
           <ClipboardCheck className="h-4 w-4 shrink-0" aria-hidden />
           Get a Free Estimate

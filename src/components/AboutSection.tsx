@@ -25,7 +25,7 @@ type AboutSectionProps = {
 
 export function AboutSection({ compact = false }: AboutSectionProps) {
   return (
-    <section className="bg-pb-navy py-16 text-white sm:py-20">
+    <section className="border-t border-white/10 pb-section-alt py-16 text-white sm:py-20">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">

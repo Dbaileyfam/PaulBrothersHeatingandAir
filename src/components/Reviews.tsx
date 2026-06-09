@@ -3,7 +3,7 @@ import { reviews } from "@/content/site";
 
 export function Reviews() {
   return (
-    <section id="reviews" className="bg-pb-gray-light py-16 sm:py-20">
+    <section id="reviews" className="pb-section-alt py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center">
           <h2 className="section-heading">What Our Customers Say</h2>
@@ -15,7 +15,7 @@ export function Reviews() {
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} className="h-5 w-5 fill-current" aria-hidden />
             ))}
-            <span className="ml-2 text-sm font-semibold text-pb-navy">
+            <span className="ml-2 text-sm font-semibold text-white">
               Highly rated local HVAC company
             </span>
           </div>
@@ -25,17 +25,17 @@ export function Reviews() {
           {reviews.map((review) => (
             <blockquote
               key={review.author}
-              className="flex flex-col rounded-2xl border border-pb-border bg-white p-6 shadow-sm"
+              className="pb-card flex flex-col p-6"
             >
               <div className="mb-3 flex gap-0.5 text-pb-orange">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-current" aria-hidden />
                 ))}
               </div>
-              <p className="flex-1 text-sm leading-relaxed text-pb-gray">
+              <p className="flex-1 text-sm leading-relaxed text-white/75">
                 &ldquo;{review.quote}&rdquo;
               </p>
-              <footer className="mt-4 text-sm font-semibold text-pb-navy">
+              <footer className="mt-4 text-sm font-semibold text-white">
                 — {review.author}
               </footer>
             </blockquote>

@@ -18,18 +18,18 @@ export function ServiceAreas() {
               technicians are ready to help.
             </p>
 
-            <div className="mt-8 flex items-start gap-3 rounded-xl border border-pb-border bg-pb-gray-light p-4">
+            <div className="pb-card mt-8 flex items-start gap-3 p-4">
               <MapPin
-                className="mt-0.5 h-5 w-5 shrink-0 text-pb-sky"
+                className="mt-0.5 h-5 w-5 shrink-0 text-sky-300"
                 aria-hidden
               />
               <div>
-                <p className="font-semibold text-pb-navy">Our Location</p>
+                <p className="font-semibold text-white">Our Location</p>
                 <a
                   href={site.address.mapsHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 text-sm text-pb-gray transition hover:text-pb-sky"
+                  className="mt-1 text-sm text-white/70 transition hover:text-sky-300"
                 >
                   {site.address.full}
                 </a>
@@ -38,20 +38,20 @@ export function ServiceAreas() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-pb-gray">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/60">
               Cities We Serve
             </h3>
             <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
               {site.serviceAreas.map((city) => (
                 <li
                   key={city}
-                  className="rounded-lg border border-pb-border bg-white px-4 py-3 text-center text-sm font-medium text-pb-navy"
+                  className="rounded-lg border border-white/10 bg-pb-navy-light/40 px-4 py-3 text-center text-sm font-medium text-white"
                 >
                   {city}
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-sm text-pb-gray">
+            <p className="mt-6 text-sm text-white/70">
               Not sure if we cover your neighborhood? Call or text — we&apos;re
               happy to confirm service availability in your area.
             </p>

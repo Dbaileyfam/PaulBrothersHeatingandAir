@@ -6,7 +6,7 @@ const icons = [Fan, Flame, Wind, AirVent, Building2, ShieldAlert];
 
 export function ServicesPreview() {
   return (
-    <section className="bg-pb-gray-light py-16 sm:py-20">
+    <section className="pb-section-alt py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
           <h2 className="section-heading">
@@ -25,18 +25,18 @@ export function ServicesPreview() {
             return (
               <article
                 key={service.to}
-                className="flex flex-col rounded-2xl border border-pb-border bg-white p-6 shadow-sm transition hover:shadow-md"
+                className="pb-card flex flex-col p-6 transition hover:border-sky-400/30 hover:bg-pb-navy-light/70"
               >
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-pb-sky-light text-pb-sky">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500/20 text-sky-300">
                   <Icon className="h-6 w-6" aria-hidden />
                 </div>
-                <h3 className="text-lg font-bold text-pb-navy">{service.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-pb-gray">
+                <h3 className="text-lg font-bold text-white">{service.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">
                   {service.summary}
                 </p>
                 <Link
                   to={service.to}
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-pb-sky transition hover:text-pb-navy"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-sky-300 transition hover:text-white"
                 >
                   Learn more
                   <ArrowRight className="h-4 w-4" aria-hidden />

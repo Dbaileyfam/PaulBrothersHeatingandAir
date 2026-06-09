@@ -18,7 +18,7 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
         path={content.path}
       />
 
-      <section className="bg-gradient-to-br from-pb-navy via-pb-navy-light to-pb-sky py-14 text-white sm:py-18">
+      <section className="bg-gradient-to-br from-pb-deep via-pb-navy-light to-pb-sky py-14 text-white sm:py-18">
         <div className="mx-auto max-w-6xl px-4">
           <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
             {content.title}
@@ -38,19 +38,19 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
       <section className="py-14 sm:py-18">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <div className="space-y-5 text-pb-gray leading-relaxed">
+            <div className="space-y-5 pb-page-body">
               {content.body.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
           </div>
-          <aside className="h-fit rounded-2xl border border-pb-border bg-pb-gray-light p-6">
-            <h2 className="text-lg font-bold text-pb-navy">What We Offer</h2>
+          <aside className="pb-card h-fit p-6">
+            <h2 className="text-lg font-bold text-white">What We Offer</h2>
             <ul className="mt-4 space-y-3">
               {content.highlights.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-2 text-sm text-pb-navy"
+                  className="flex items-start gap-2 text-sm text-white/85"
                 >
                   <span
                     className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-pb-orange"
@@ -67,19 +67,19 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
         </div>
       </section>
 
-      <section className="border-t border-pb-border bg-pb-gray-light py-12">
+      <section className="border-t border-white/10 pb-section-alt py-12">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-xl font-bold text-pb-navy">Related Services</h2>
+          <h2 className="text-xl font-bold text-white">Related Services</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             {content.relatedServices.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
-                className="group flex items-center justify-between rounded-xl border border-pb-border bg-white px-5 py-4 text-sm font-semibold text-pb-navy transition hover:border-pb-sky hover:shadow-sm"
+                className="group flex items-center justify-between rounded-xl border border-white/10 bg-pb-navy-light/40 px-5 py-4 text-sm font-semibold text-white transition hover:border-sky-400/40 hover:bg-pb-navy-light/70"
               >
                 {item.label}
                 <ArrowRight
-                  className="h-4 w-4 text-pb-sky transition group-hover:translate-x-0.5"
+                  className="h-4 w-4 text-sky-300 transition group-hover:translate-x-0.5"
                   aria-hidden
                 />
               </Link>

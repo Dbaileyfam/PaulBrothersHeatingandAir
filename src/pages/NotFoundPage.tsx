@@ -11,8 +11,8 @@ export function NotFoundPage() {
         path="/404/"
       />
       <section className="flex min-h-[50vh] flex-col items-center justify-center px-4 py-20 text-center">
-        <h1 className="text-4xl font-bold text-pb-navy">Page Not Found</h1>
-        <p className="mt-4 max-w-md text-pb-gray">
+        <h1 className="text-4xl font-bold text-white">Page Not Found</h1>
+        <p className="mt-4 max-w-md text-white/70">
           Sorry, we couldn&apos;t find that page. Return home or contact us for
           HVAC service in Midvale and Salt Lake County.
         </p>
@@ -25,7 +25,7 @@ export function NotFoundPage() {
           </Link>
           <Link
             to={routes.contactUs}
-            className="rounded-lg border-2 border-pb-navy px-6 py-3 font-semibold text-pb-navy transition hover:bg-pb-gray-light"
+            className="rounded-lg border-2 border-white/25 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20"
           >
             Contact Us
           </Link>
