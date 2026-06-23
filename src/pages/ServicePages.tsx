@@ -1,5 +1,5 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
-import { servicePages } from "@/content/site";
+import { servicePages } from "@/content/service-pages";
 import { routes } from "@/lib/routes";
 
 export function AcRepairPage() {
