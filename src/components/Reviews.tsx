@@ -1,5 +1,7 @@
-import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Star } from "lucide-react";
 import { featuredReviews } from "@/content/reviews";
+import { routes } from "@/lib/routes";
 
 export function Reviews() {
   return (
@@ -41,6 +43,16 @@ export function Reviews() {
               </footer>
             </blockquote>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link
+            to={`${routes.aboutUs}#customer-reviews`}
+            className="inline-flex items-center gap-2 rounded-lg border-2 border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/35 hover:bg-white/15"
+          >
+            Read Our Reviews
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </Link>
         </div>
       </div>
     </section>

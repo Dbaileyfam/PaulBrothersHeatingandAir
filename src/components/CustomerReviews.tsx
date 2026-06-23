@@ -79,7 +79,10 @@ export function CustomerReviews() {
   }
 
   return (
-    <section id="customer-reviews" className="border-t border-white/10 py-16 sm:py-20">
+    <section
+      id="customer-reviews"
+      className="scroll-mt-28 border-t border-white/10 py-16 sm:py-20"
+    >
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-wide text-sky-300">

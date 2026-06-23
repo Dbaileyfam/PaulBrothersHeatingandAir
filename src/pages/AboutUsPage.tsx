@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { PageMeta } from "@/components/PageMeta";
 import { AboutSection } from "@/components/AboutSection";
 import { ReviewsProof } from "@/components/ReviewsProof";
@@ -7,6 +9,17 @@ import { aboutPage } from "@/content/site";
 import { routes } from "@/lib/routes";
 
 export function AboutUsPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+    const id = location.hash.replace("#", "");
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [location]);
+
   return (
     <>
       <PageMeta
