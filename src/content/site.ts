@@ -11,7 +11,7 @@ export const site = {
   hero: {
     headline: "Heating & Air Conditioning Serving the Salt Lake Valley & All Surrounding Areas",
     subheadline:
-      "Need HVAC help today? Paul Brothers Heating & Air provides AC repair, furnace repair, HVAC installation, ductwork, indoor air quality services, and 24/7 emergency HVAC service throughout the Salt Lake Valley and surrounding areas. We're a mobile team — we come to you, and we'll travel as far as needed for the right job.",
+      "Need HVAC help today? Paul Brothers Heating & Air provides AC repair, furnace repair, HVAC installation, ductwork, indoor air quality services, and 24/7 emergency HVAC service throughout the Salt Lake Valley and surrounding areas.",
   },
   phone: "385-787-8077",
   phoneHref: "tel:+13857878077",
