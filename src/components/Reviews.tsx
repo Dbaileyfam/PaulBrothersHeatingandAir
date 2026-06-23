@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import { reviews } from "@/content/site";
+import { featuredReviews } from "@/content/reviews";
 
 export function Reviews() {
   return (
@@ -17,15 +17,15 @@ export function Reviews() {
               <Star key={i} className="h-5 w-5 fill-current" aria-hidden />
             ))}
             <span className="ml-2 text-sm font-semibold text-white">
-              Highly rated local HVAC company
+              5.0 stars · Nearly 200 reviews
             </span>
           </div>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {reviews.map((review) => (
+          {featuredReviews.slice(0, 3).map((review) => (
             <blockquote
-              key={review.author}
+              key={review.id}
               className="pb-card flex flex-col p-6"
             >
               <div className="mb-3 flex gap-0.5 text-pb-orange">

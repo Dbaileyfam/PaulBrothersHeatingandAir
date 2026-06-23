@@ -278,24 +278,6 @@ export const homeServiceCards = [
   },
 ] as const;
 
-export const reviews = [
-  {
-    quote:
-      "Paul Brothers showed up quickly, explained everything clearly, and had our AC running the same day. Highly recommend!",
-    author: "Homeowner in Sandy",
-  },
-  {
-    quote:
-      "Honest pricing and great communication. They gave us a second opinion that saved us from an unnecessary replacement.",
-    author: "Customer in Murray",
-  },
-  {
-    quote:
-      "Our furnace went out on a cold night and they came out fast. Professional, friendly, and fairly priced.",
-    author: "Family in West Jordan",
-  },
-] as const;
-
 export const aboutPage = {
   metaTitle: "About Paul Brothers Heating & Air | Salt Lake Valley HVAC",
   metaDescription:
