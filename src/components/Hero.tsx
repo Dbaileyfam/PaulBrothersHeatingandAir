@@ -34,7 +34,7 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex justify-center">
-            <ContactButtons size="lg" showEstimate />
+            <ContactButtons size="lg" showEstimate showReviews />
           </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-white/80">
