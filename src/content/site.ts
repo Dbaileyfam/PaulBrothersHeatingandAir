@@ -30,28 +30,6 @@ export const site = {
     mapsHref:
       "https://www.google.com/maps/search/?api=1&query=7042+Commerce+Park+Dr+%23162,+Midvale,+UT+84047",
   },
-  serviceArea: {
-    headline: "Serving the Salt Lake Valley & Beyond",
-    description:
-      "Paul Brothers Heating & Air is a mobile HVAC company. We don't have a walk-in storefront — our licensed technicians come directly to your home or business with fully stocked service vehicles.",
-    citiesNote:
-      "We regularly serve these communities and many more throughout Utah:",
-    travelNote:
-      "No distance restrictions — if the job is right for us, we'll travel to you.",
-  },
-  serviceAreas: [
-    "Midvale",
-    "West Jordan",
-    "Sandy",
-    "Murray",
-    "South Jordan",
-    "Salt Lake City",
-    "Draper",
-    "Taylorsville",
-    "Cottonwood Heights",
-    "Millcreek",
-    "Holladay",
-  ],
   trustSignals: [
     {
       title: "Family-Owned",

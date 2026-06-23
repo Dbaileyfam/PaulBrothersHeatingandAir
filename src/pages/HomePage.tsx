@@ -1,7 +1,6 @@
 import { PageMeta } from "@/components/PageMeta";
 import { Hero } from "@/components/Hero";
 import { ServicesPreview } from "@/components/ServicesPreview";
-import { ServiceAreas } from "@/components/ServiceAreas";
 import { AboutSection } from "@/components/AboutSection";
 import { Reviews } from "@/components/Reviews";
 import { ContactSection } from "@/components/ContactSection";
@@ -17,7 +16,6 @@ export function HomePage() {
       />
       <Hero />
       <ServicesPreview />
-      <ServiceAreas />
       <AboutSection compact />
       <Reviews />
       <ContactSection />
