@@ -48,18 +48,20 @@ export function Header() {
               Services
               <ChevronDown className="h-4 w-4" aria-hidden />
             </button>
-            <div className="invisible absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-white/10 bg-pb-navy-light py-2 opacity-0 shadow-xl shadow-black/40 transition group-hover:visible group-hover:opacity-100">
-              {serviceNavLinks.map((link) => (
-                <NavLink
-                  key={link.to}
-                  to={link.to}
-                  className={({ isActive }) =>
-                    `block px-4 py-2 text-sm ${navClass(isActive)}`
-                  }
-                >
-                  {link.label}
-                </NavLink>
-              ))}
+            <div className="invisible absolute left-0 top-full z-50 w-56 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+              <div className="rounded-xl border border-white/10 bg-pb-navy-light py-2 shadow-xl shadow-black/40">
+                {serviceNavLinks.map((link) => (
+                  <NavLink
+                    key={link.to}
+                    to={link.to}
+                    className={({ isActive }) =>
+                      `block px-4 py-2 text-sm ${navClass(isActive)}`
+                    }
+                  >
+                    {link.label}
+                  </NavLink>
+                ))}
+              </div>
             </div>
           </div>
 

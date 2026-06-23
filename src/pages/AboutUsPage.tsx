@@ -1,5 +1,6 @@
 import { PageMeta } from "@/components/PageMeta";
 import { AboutSection } from "@/components/AboutSection";
+import { ReviewsProof } from "@/components/ReviewsProof";
 import { CTABanner } from "@/components/CTABanner";
 import { aboutPage } from "@/content/site";
 import { routes } from "@/lib/routes";
@@ -32,6 +33,7 @@ export function AboutUsPage() {
         </div>
       </section>
 
+      <ReviewsProof />
       <AboutSection />
       <CTABanner />
     </>
