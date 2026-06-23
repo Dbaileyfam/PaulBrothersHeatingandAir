@@ -8,8 +8,8 @@ type ContactSectionProps = {
 };
 
 export function ContactSection({
-  headline = "Schedule HVAC Service in Midvale Today",
-  intro = "Need AC repair, furnace service, or a free estimate? Call or text Paul Brothers Heating & Air — we respond quickly and serve all of Salt Lake County.",
+  headline = "Schedule HVAC Service Today",
+  intro = "Need AC repair, furnace service, or a free estimate? Call or text Paul Brothers Heating & Air — we respond quickly and our mobile technicians come to you throughout the Salt Lake Valley and beyond.",
 }: ContactSectionProps) {
   return (
     <section className="py-16 sm:py-20">
@@ -79,9 +79,12 @@ export function ContactSection({
                     <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
                     <span>
                       <span className="block text-xs font-semibold uppercase tracking-wide text-white/50">
-                        Address
+                        {site.address.label}
                       </span>
                       <span className="font-semibold">{site.address.full}</span>
+                      <span className="mt-1 block text-xs text-white/50">
+                        {site.address.note}
+                      </span>
                     </span>
                   </a>
                 </li>

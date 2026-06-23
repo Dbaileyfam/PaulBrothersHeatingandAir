@@ -76,7 +76,7 @@ export function AnimatedLogo() {
         />
         <img
           src={logoSrc}
-          alt="Paul Brothers Heating & Air — heating and cooling services in Midvale, Utah"
+          alt="Paul Brothers Heating & Air — mobile heating and cooling services throughout the Salt Lake Valley"
           width={640}
           height={200}
           className="relative z-10 h-auto w-full"

@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react";
+import { Truck } from "lucide-react";
 import { site } from "@/content/site";
 import { ContactButtons } from "./ContactButtons";
 
@@ -8,38 +8,27 @@ export function ServiceAreas() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid items-start gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="section-heading">
-              Serving Salt Lake County &amp; Surrounding Cities
-            </h2>
-            <p className="section-subheading">
-              Based in Midvale, Utah, we provide fast, reliable HVAC service
-              throughout Salt Lake County. Whether you need AC repair in Sandy,
-              furnace service in Murray, or a new system in Draper, our local
-              technicians are ready to help.
-            </p>
+            <h2 className="section-heading">{site.serviceArea.headline}</h2>
+            <p className="section-subheading">{site.serviceArea.description}</p>
 
             <div className="pb-card mt-8 flex items-start gap-3 p-4">
-              <MapPin
+              <Truck
                 className="mt-0.5 h-5 w-5 shrink-0 text-sky-300"
                 aria-hidden
               />
               <div>
-                <p className="font-semibold text-white">Our Location</p>
-                <a
-                  href={site.address.mapsHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 text-sm text-white/70 transition hover:text-sky-300"
-                >
-                  {site.address.full}
-                </a>
+                <p className="font-semibold text-white">We Come to You</p>
+                <p className="mt-1 text-sm text-white/70">
+                  {site.serviceArea.travelNote} Call or text to schedule service
+                  at your home or business.
+                </p>
               </div>
             </div>
           </div>
 
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/60">
-              Cities We Serve
+              Communities We Serve
             </h3>
             <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
               {site.serviceAreas.map((city) => (
@@ -51,9 +40,8 @@ export function ServiceAreas() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-sm text-white/70">
-              Not sure if we cover your neighborhood? Call or text — we&apos;re
-              happy to confirm service availability in your area.
+            <p className="mt-4 text-sm text-white/60">
+              {site.serviceArea.citiesNote}
             </p>
             <div className="mt-6">
               <ContactButtons showEstimate />

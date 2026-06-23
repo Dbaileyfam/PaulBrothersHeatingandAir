@@ -28,7 +28,8 @@ export function BlogPage() {
           <p className="text-lg font-semibold text-white">Articles coming soon</p>
           <p className="mt-3 text-white/70">
             Check back for HVAC maintenance tips, seasonal advice, and local
-            heating and cooling insights for Midvale and Salt Lake County.
+            heating and cooling insights for the Salt Lake Valley and
+            surrounding areas.
           </p>
         </div>
       </section>

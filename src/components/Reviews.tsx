@@ -9,7 +9,8 @@ export function Reviews() {
           <h2 className="section-heading">What Our Customers Say</h2>
           <p className="section-subheading mx-auto">
             Paul Brothers Heating &amp; Air is proud to earn strong Google
-            reviews from homeowners and businesses across Salt Lake County.
+            reviews from homeowners and businesses across the Salt Lake Valley
+            and surrounding areas.
           </p>
           <div className="mt-4 inline-flex items-center gap-1 text-pb-orange">
             {Array.from({ length: 5 }).map((_, i) => (

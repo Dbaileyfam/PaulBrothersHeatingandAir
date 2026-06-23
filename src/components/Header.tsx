@@ -23,7 +23,7 @@ export function Header() {
             {site.name}
           </span>
           <span className="hidden text-xs font-medium text-sky-300 sm:block">
-            Midvale, Utah · Salt Lake County
+            Salt Lake Valley &amp; Surrounding Areas
           </span>
         </Link>
 

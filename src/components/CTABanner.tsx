@@ -9,8 +9,8 @@ type CTABannerProps = {
 };
 
 export function CTABanner({
-  headline = "Ready for HVAC Service in Midvale?",
-  subtext = "Call, text, or request a free estimate — we serve all of Salt Lake County.",
+  headline = "Ready for HVAC Service?",
+  subtext = "Call, text, or request a free estimate — our mobile technicians serve the Salt Lake Valley and beyond.",
 }: CTABannerProps) {
   return (
     <section className="border-t border-white/10 bg-pb-navy-light/30 py-12 text-white sm:py-16">

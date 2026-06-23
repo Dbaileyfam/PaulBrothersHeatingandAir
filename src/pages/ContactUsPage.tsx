@@ -26,7 +26,7 @@ export function ContactUsPage() {
 
       <ContactSection
         headline="Get a Free HVAC Estimate"
-        intro="Call, text, or email our Midvale office. We offer free estimates and honest second opinions across Salt Lake County."
+        intro="Call, text, or email our team. We offer free estimates and honest second opinions — and we'll travel to you anywhere in the Salt Lake Valley and beyond."
       />
       <CTABanner headline="Need Emergency HVAC Service?" subtext="We're available 24/7 for heating and cooling emergencies." />
     </>

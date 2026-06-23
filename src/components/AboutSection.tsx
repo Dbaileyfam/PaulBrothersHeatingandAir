@@ -32,7 +32,7 @@ export function AboutSection({ compact = false }: AboutSectionProps) {
             Why Choose Paul Brothers Heating &amp; Air?
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-white/80">
-            As a family-owned HVAC company in Midvale, we combine technical
+            As a family-owned mobile HVAC company, we combine technical
             expertise with honest, neighborly service. You get clear
             communication, fair pricing, and work done right the first time.
           </p>

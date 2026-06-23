@@ -10,12 +10,13 @@ export function ServicesPreview() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
           <h2 className="section-heading">
-            HVAC Services in Midvale &amp; Salt Lake County
+            HVAC Services for the Salt Lake Valley &amp; Surrounding Areas
           </h2>
           <p className="section-subheading">
             From AC repair and furnace service to ductwork and emergency HVAC,
-            Paul Brothers Heating &amp; Air delivers dependable solutions for
-            homes and businesses throughout the Wasatch Front.
+            Paul Brothers Heating &amp; Air delivers dependable mobile service for
+            homes and businesses across the Salt Lake Valley and all surrounding
+            areas — we&apos;ll travel wherever the job takes us.
           </p>
         </div>
 

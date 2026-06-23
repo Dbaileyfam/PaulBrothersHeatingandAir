@@ -11,8 +11,8 @@ export function HomePage() {
   return (
     <>
       <PageMeta
-        title="Heating & Air Conditioning Services in Midvale, Utah"
-        description="Paul Brothers Heating & Air — AC repair, furnace repair, HVAC installation, ductwork, indoor air quality, and 24/7 emergency service in Midvale and Salt Lake County. Call for a free estimate."
+        title="Heating & Air Conditioning | Salt Lake Valley & Surrounding Areas"
+        description="Paul Brothers Heating & Air — AC repair, furnace repair, HVAC installation, ductwork, indoor air quality, and 24/7 emergency service throughout the Salt Lake Valley and surrounding areas. Call for a free estimate."
         path={routes.home}
       />
       <Hero />

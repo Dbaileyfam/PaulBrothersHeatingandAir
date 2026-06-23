@@ -12,8 +12,8 @@ export function Footer() {
           <div>
             <p className="text-lg font-bold text-white">{site.name}</p>
             <p className="mt-2 text-sm leading-relaxed">
-              Family-owned HVAC company serving Midvale and Salt Lake County.
-              Licensed, insured, and BBB A+ Accredited.
+              Family-owned mobile HVAC company serving the Salt Lake Valley and
+              surrounding areas. Licensed, insured, and BBB A+ Accredited.
             </p>
           </div>
 
@@ -67,7 +67,10 @@ export function Footer() {
                   {site.email}
                 </a>
               </li>
-              <li>{site.address.full}</li>
+              <li>
+                <span className="text-white/50">{site.address.label}: </span>
+                {site.address.full}
+              </li>
               <li>
                 <Link to={routes.contactUs} className="transition hover:text-white">
                   Get a Free Estimate
@@ -78,8 +81,8 @@ export function Footer() {
         </div>
 
         <p className="mt-10 border-t border-white/10 pt-6 text-center text-xs">
-          &copy; {year} {site.name}. All rights reserved. HVAC services in
-          Midvale, Utah and Salt Lake County.
+          &copy; {year} {site.name}. All rights reserved. Mobile HVAC services
+          throughout the Salt Lake Valley and surrounding areas.
         </p>
       </div>
     </footer>
