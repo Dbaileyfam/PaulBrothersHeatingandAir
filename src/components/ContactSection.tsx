@@ -8,8 +8,8 @@ type ContactSectionProps = {
 };
 
 export function ContactSection({
-  headline = "Schedule HVAC Service Today",
-  intro = "Need AC repair, furnace service, or a free estimate? Call or text Paul Brothers Heating & Air — we respond quickly and our mobile technicians come to you throughout the Salt Lake Valley and beyond.",
+  headline = "Schedule HVAC Service",
+  intro = "Call or text Paul Brothers Heating & Air for AC repair, furnace service, or a free estimate in Midvale and the Salt Lake Valley.",
 }: ContactSectionProps) {
   return (
     <section className="py-16 sm:py-20">

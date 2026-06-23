@@ -4,13 +4,13 @@ import { CTABanner } from "@/components/CTABanner";
 import { contactPage } from "@/content/site";
 import { routes } from "@/lib/routes";
 
-export function ContactUsPage() {
+export function ContactPage() {
   return (
     <>
       <PageMeta
         title={contactPage.metaTitle}
         description={contactPage.metaDescription}
-        path={routes.contactUs}
+        path={routes.contact}
       />
 
       <section className="bg-gradient-to-br from-pb-navy via-pb-navy-light to-pb-sky py-14 text-white sm:py-18">
@@ -24,11 +24,11 @@ export function ContactUsPage() {
         </div>
       </section>
 
-      <ContactSection
-        headline="Get a Free HVAC Estimate"
-        intro="Call, text, or email our team. We offer free estimates and honest second opinions — and we'll travel to you anywhere in the Salt Lake Valley and beyond."
+      <ContactSection headline="Get a Free HVAC Estimate" />
+      <CTABanner
+        headline="Need Emergency HVAC Service?"
+        subtext="24/7 emergency AC and furnace repair in the Salt Lake Valley. Call or text now."
       />
-      <CTABanner headline="Need Emergency HVAC Service?" subtext="We're available 24/7 for heating and cooling emergencies." />
     </>
   );
 }

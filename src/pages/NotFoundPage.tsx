@@ -14,7 +14,7 @@ export function NotFoundPage() {
         <h1 className="text-4xl font-bold text-white">Page Not Found</h1>
         <p className="mt-4 max-w-md text-white/70">
           Sorry, we couldn&apos;t find that page. Return home or contact us for
-          HVAC service throughout the Salt Lake Valley and surrounding areas.
+          HVAC service in Midvale and the Salt Lake Valley.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link
@@ -24,7 +24,7 @@ export function NotFoundPage() {
             Back to Home
           </Link>
           <Link
-            to={routes.contactUs}
+            to={routes.contact}
             className="rounded-lg border-2 border-white/25 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20"
           >
             Contact Us

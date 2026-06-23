@@ -2,12 +2,20 @@ import { ServicePageLayout } from "@/components/ServicePageLayout";
 import { servicePages } from "@/content/site";
 import { routes } from "@/lib/routes";
 
-export function AirConditioningPage() {
-  return <ServicePageLayout content={servicePages[routes.airConditioning]} />;
+export function AcRepairPage() {
+  return <ServicePageLayout content={servicePages[routes.acRepair]} />;
 }
 
-export function HeatingPage() {
-  return <ServicePageLayout content={servicePages[routes.heating]} />;
+export function FurnaceRepairPage() {
+  return <ServicePageLayout content={servicePages[routes.furnaceRepair]} />;
+}
+
+export function HvacInstallationPage() {
+  return <ServicePageLayout content={servicePages[routes.hvacInstallation]} />;
+}
+
+export function HvacMaintenancePage() {
+  return <ServicePageLayout content={servicePages[routes.hvacMaintenance]} />;
 }
 
 export function DuctworkPage() {
@@ -18,10 +26,6 @@ export function IndoorAirQualityPage() {
   return <ServicePageLayout content={servicePages[routes.indoorAirQuality]} />;
 }
 
-export function CommercialPage() {
-  return <ServicePageLayout content={servicePages[routes.commercial]} />;
-}
-
-export function EmergencyHvacRepairPage() {
-  return <ServicePageLayout content={servicePages[routes.emergencyHvacRepair]} />;
+export function CommercialHvacPage() {
+  return <ServicePageLayout content={servicePages[routes.commercialHvac]} />;
 }

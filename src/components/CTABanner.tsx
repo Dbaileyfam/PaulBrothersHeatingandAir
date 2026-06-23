@@ -9,8 +9,8 @@ type CTABannerProps = {
 };
 
 export function CTABanner({
-  headline = "Ready for HVAC Service?",
-  subtext = "Call, text, or request a free estimate — our mobile technicians serve the Salt Lake Valley and beyond.",
+  headline = "Need HVAC Service?",
+  subtext = "Call or text for a free estimate or emergency service in Midvale and the Salt Lake Valley.",
 }: CTABannerProps) {
   return (
     <section className="border-t border-white/10 bg-pb-navy-light/30 py-12 text-white sm:py-16">
@@ -30,7 +30,7 @@ export function CTABanner({
             {site.text}
           </a>{" "}
           ·{" "}
-          <Link to={routes.contactUs} className="font-semibold text-white underline">
+          <Link to={routes.contact} className="font-semibold text-white underline">
             Contact online
           </Link>
         </p>

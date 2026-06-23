@@ -23,21 +23,18 @@ export function Header() {
             {site.name}
           </span>
           <span className="hidden text-xs font-medium text-sky-300 sm:block">
-            Salt Lake Valley &amp; Surrounding Areas
+            Midvale, UT · Salt Lake Valley
           </span>
         </Link>
 
         <nav className="hidden items-center gap-5 lg:flex" aria-label="Main">
-          {navLinks.slice(0, 2).map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              end={link.to === routes.home}
-              className={({ isActive }) => `text-sm ${navClass(isActive)}`}
-            >
-              {link.label}
-            </NavLink>
-          ))}
+          <NavLink
+            to={routes.home}
+            end
+            className={({ isActive }) => `text-sm ${navClass(isActive)}`}
+          >
+            Home
+          </NavLink>
 
           <div className="relative group">
             <button
@@ -65,7 +62,7 @@ export function Header() {
             </div>
           </div>
 
-          {navLinks.slice(2).map((link) => (
+          {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}

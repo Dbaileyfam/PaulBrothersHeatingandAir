@@ -12,8 +12,8 @@ export function Footer() {
           <div>
             <p className="text-lg font-bold text-white">{site.name}</p>
             <p className="mt-2 text-sm leading-relaxed">
-              Family-owned mobile HVAC company serving the Salt Lake Valley and
-              surrounding areas. Licensed, insured, and BBB A+ Accredited.
+              Midvale-based HVAC company serving the Salt Lake Valley. Licensed,
+              insured, and BBB A+ Accredited.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export function Footer() {
                 {site.address.full}
               </li>
               <li>
-                <Link to={routes.contactUs} className="transition hover:text-white">
+                <Link to={routes.contact} className="transition hover:text-white">
                   Get a Free Estimate
                 </Link>
               </li>

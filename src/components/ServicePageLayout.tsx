@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import type { ServicePageContent } from "@/content/site";
+import { statewideAvailabilityNote } from "@/content/site";
+import { routes } from "@/lib/routes";
 import { PageMeta } from "./PageMeta";
 import { ContactButtons } from "./ContactButtons";
 import { CTABanner } from "./CTABanner";
@@ -43,6 +45,9 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
+            <p className="mt-8 text-sm leading-relaxed text-white/60">
+              {statewideAvailabilityNote}
+            </p>
           </div>
           <aside className="pb-card h-fit p-6">
             <h2 className="text-lg font-bold text-white">What We Offer</h2>
@@ -67,7 +72,25 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
         </div>
       </section>
 
-      <section className="border-t border-white/10 pb-section-alt py-12">
+      {content.faqs && content.faqs.length > 0 ? (
+        <section className="border-t border-white/10 pb-section-alt py-12">
+          <div className="mx-auto max-w-3xl px-4">
+            <h2 className="text-2xl font-bold text-white">Common Questions</h2>
+            <dl className="mt-6 space-y-6">
+              {content.faqs.map((faq) => (
+                <div key={faq.question}>
+                  <dt className="font-semibold text-white">{faq.question}</dt>
+                  <dd className="mt-2 text-sm leading-relaxed text-white/75">
+                    {faq.answer}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+      ) : null}
+
+      <section className="border-t border-white/10 py-12">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="text-xl font-bold text-white">Related Services</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -85,10 +108,18 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
               </Link>
             ))}
           </div>
+          <p className="mt-6 text-sm">
+            <Link to={routes.services} className="font-semibold text-sky-300 hover:text-white">
+              View all HVAC services →
+            </Link>
+          </p>
         </div>
       </section>
 
-      <CTABanner />
+      <CTABanner
+        headline="Need HVAC Help in Midvale?"
+        subtext="Call or text for a free estimate or 24/7 emergency service in the Salt Lake Valley."
+      />
     </>
   );
 }

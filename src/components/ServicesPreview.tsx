@@ -1,22 +1,19 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Fan, Flame, Wind, AirVent, Building2, ShieldAlert } from "lucide-react";
+import { ArrowRight, Fan, Flame, Wrench, Settings, Wind, AirVent, Building2 } from "lucide-react";
 import { homeServiceCards } from "@/content/site";
+import { routes } from "@/lib/routes";
 
-const icons = [Fan, Flame, Wind, AirVent, Building2, ShieldAlert];
+const icons = [Fan, Flame, Wrench, Settings, Wind, AirVent];
 
 export function ServicesPreview() {
   return (
     <section className="pb-section-alt py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
-          <h2 className="section-heading">
-            HVAC Services for the Salt Lake Valley &amp; Surrounding Areas
-          </h2>
+          <h2 className="section-heading">HVAC Services in Midvale &amp; the Salt Lake Valley</h2>
           <p className="section-subheading">
-            From AC repair and furnace service to ductwork and emergency HVAC,
-            Paul Brothers Heating &amp; Air delivers dependable mobile service for
-            homes and businesses across the Salt Lake Valley and all surrounding
-            areas — we&apos;ll travel wherever the job takes us.
+            Repairs, installations, maintenance, and emergency service from a
+            Midvale-based team you can call directly.
           </p>
         </div>
 
@@ -45,6 +42,23 @@ export function ServicesPreview() {
               </article>
             );
           })}
+        </div>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Link
+            to={routes.services}
+            className="inline-flex items-center gap-2 rounded-lg bg-pb-sky px-6 py-3 text-sm font-semibold text-white transition hover:bg-pb-navy-light"
+          >
+            View All Services
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </Link>
+          <Link
+            to={routes.commercialHvac}
+            className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            <Building2 className="h-4 w-4" aria-hidden />
+            Commercial HVAC
+          </Link>
         </div>
       </div>
     </section>
