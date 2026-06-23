@@ -2,6 +2,7 @@ import { PageMeta } from "@/components/PageMeta";
 import { Hero } from "@/components/Hero";
 import { ServicesPreview } from "@/components/ServicesPreview";
 import { AboutSection } from "@/components/AboutSection";
+import { ReviewsProof } from "@/components/ReviewsProof";
 import { Reviews } from "@/components/Reviews";
 import { ContactSection } from "@/components/ContactSection";
 import { routes } from "@/lib/routes";
@@ -17,6 +18,7 @@ export function HomePage() {
       <Hero />
       <ServicesPreview />
       <AboutSection compact />
+      <ReviewsProof />
       <Reviews />
       <ContactSection />
     </>

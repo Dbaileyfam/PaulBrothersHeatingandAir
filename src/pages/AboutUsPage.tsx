@@ -25,6 +25,8 @@ export function AboutUsPage() {
         </div>
       </section>
 
+      <ReviewsProof />
+
       <section className="py-14 sm:py-18">
         <div className="mx-auto max-w-3xl space-y-5 px-4 pb-page-body">
           {aboutPage.body.map((paragraph) => (
@@ -33,7 +35,6 @@ export function AboutUsPage() {
         </div>
       </section>
 
-      <ReviewsProof />
       <AboutSection />
       <CTABanner />
     </>
