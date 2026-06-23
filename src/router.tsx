@@ -12,6 +12,7 @@ import {
 } from "@/pages/ServicePages";
 import { ContactUsPage } from "@/pages/ContactUsPage";
 import { BlogPage } from "@/pages/BlogPage";
+import { StatewideHvacServicePage } from "@/pages/StatewideHvacServicePage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { routes } from "@/lib/routes";
 
@@ -49,6 +50,11 @@ export const router = createBrowserRouter(
         { path: "contact-us", element: redirect(routes.contactUs) },
         { path: "blog/", element: <BlogPage /> },
         { path: "blog", element: redirect(routes.blog) },
+        { path: "statewide-hvac-service-utah/", element: <StatewideHvacServicePage /> },
+        {
+          path: "statewide-hvac-service-utah",
+          element: redirect(routes.statewideHvacService),
+        },
         { path: "*", element: <NotFoundPage /> },
       ],
     },

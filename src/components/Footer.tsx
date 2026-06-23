@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { site, serviceNavLinks, navLinks } from "@/content/site";
+import { site, serviceNavLinks, navLinks, footerServiceArea } from "@/content/site";
 import { routes } from "@/lib/routes";
 
 export function Footer() {
@@ -80,9 +80,11 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-10 border-t border-white/10 pt-6 text-center text-xs">
-          &copy; {year} {site.name}. All rights reserved. Mobile HVAC services
-          throughout the Salt Lake Valley and surrounding areas.
+        <p className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/60">
+          {footerServiceArea}
+        </p>
+        <p className="mt-3 text-center text-xs text-white/50">
+          &copy; {year} {site.name}. All rights reserved.
         </p>
       </div>
     </footer>

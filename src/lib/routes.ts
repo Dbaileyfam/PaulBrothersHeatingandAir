@@ -10,6 +10,7 @@ export const routes = {
   emergencyHvacRepair: "/emergency-hvac-repair/",
   contactUs: "/contact-us/",
   blog: "/blog/",
+  statewideHvacService: "/statewide-hvac-service-utah/",
 } as const;
 
 export type RoutePath = (typeof routes)[keyof typeof routes];

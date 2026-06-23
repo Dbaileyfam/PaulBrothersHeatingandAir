@@ -61,9 +61,19 @@ export const site = {
 export const navLinks = [
   { to: routes.home, label: "Home" },
   { to: routes.aboutUs, label: "About Us" },
+  { to: routes.statewideHvacService, label: "Statewide Service" },
   { to: routes.contactUs, label: "Contact" },
   { to: routes.blog, label: "Blog" },
 ] as const;
+
+export const footerServiceArea =
+  "Based in Midvale, UT. Serving the Salt Lake Valley daily, with statewide Utah availability for qualifying HVAC projects.";
+
+export const statewideHomeSection = {
+  headline: "HVAC Service Across the Salt Lake Valley — With Statewide Utah Availability",
+  body: "Paul Brothers Heating & Air is based in Midvale and serves homeowners and businesses across the Salt Lake Valley every day. For larger HVAC projects, system replacements, commercial work, specialty installations, and qualifying service calls, our team is also willing to travel throughout Utah. If your project is outside our normal service area, call us and we'll let you know honestly what scheduling, travel, and service options are available.",
+  ctaLabel: "Ask About Statewide Service",
+} as const;
 
 export const serviceNavLinks = [
   { to: routes.airConditioning, label: "Air Conditioning" },
@@ -299,6 +309,46 @@ export const contactPage = {
   intro:
     "Ready for a free estimate or need HVAC service today? Call, text, or email our team — we provide mobile heating and cooling service throughout the Salt Lake Valley and beyond.",
 };
+
+export const statewidePage = {
+  metaTitle: "Statewide HVAC Service in Utah | Paul Brothers Heating & Air",
+  metaDescription:
+    "Paul Brothers Heating & Air is based in Midvale, UT and provides HVAC service across the Salt Lake Valley, with statewide availability for qualifying heating, cooling, installation, replacement, and commercial HVAC projects throughout Utah.",
+  headline: "Statewide HVAC Service for Utah Homes and Businesses",
+  intro:
+    "Paul Brothers Heating & Air is a family-owned HVAC company based in Midvale, Utah. Our daily service focus is the Salt Lake Valley — where we handle routine repairs, maintenance, and most residential and light commercial calls. We also travel statewide for the right projects.",
+  body: [
+    "If you are in Salt Lake City, Sandy, Murray, West Jordan, Draper, South Jordan, or nearby communities, we are your local Midvale-area HVAC team. Call or text for AC repair, furnace service, installations, ductwork, indoor air quality solutions, and emergency heating and cooling help across the valley.",
+    "For jobs outside the Salt Lake Valley, we do not promise same-day or emergency coverage in every Utah city. What we do offer is honest answers. Tell us about your project — system replacement, new construction support, commercial HVAC, specialty equipment, or a larger install — and we will explain whether statewide service makes sense, what travel may involve, and how scheduling works.",
+    "We would rather set clear expectations upfront than overpromise. That is how we have earned strong reviews and repeat customers across Utah.",
+  ],
+  coreAreaTitle: "Our Core Service Area: Midvale & the Salt Lake Valley",
+  coreAreaBody:
+    "This is where Paul Brothers is on the road every day — fast response for repairs, free estimates, second opinions, and 24/7 emergency HVAC when you need it in the valley.",
+  statewideTitle: "Statewide Utah Availability for Qualifying Projects",
+  statewideBody:
+    "When the scope, timeline, and location fit, we are willing to travel for larger or specialty work throughout Utah — including system replacements, commercial HVAC, ductwork projects, and other qualifying installations or service calls.",
+  qualifyingProjects: [
+    "Full HVAC system replacements",
+    "New air conditioning or furnace installations",
+    "Commercial heating and cooling projects",
+    "Ductwork repair, redesign, or replacement",
+    "Indoor air quality system upgrades",
+    "Specialty or larger residential HVAC projects",
+    "Select service calls outside the valley when scheduling allows",
+  ],
+  honestNote:
+    "Emergency and same-day service is focused on the Salt Lake Valley. For statewide requests, response times depend on location, job type, and current schedule — we will always be upfront about what we can commit to.",
+  serviceLinks: [
+    { to: routes.airConditioning, label: "AC Repair" },
+    { to: routes.airConditioning, label: "AC Installation" },
+    { to: routes.heating, label: "Furnace Repair" },
+    { to: routes.heating, label: "Furnace Installation" },
+    { to: routes.ductwork, label: "Ductwork Services" },
+    { to: routes.indoorAirQuality, label: "Indoor Air Quality" },
+    { to: routes.commercial, label: "Commercial HVAC" },
+  ],
+} as const;
 
 export const blogPage = {
   metaTitle: "HVAC Tips & Blog | Paul Brothers Heating & Air",
