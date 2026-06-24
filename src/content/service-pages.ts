@@ -39,12 +39,12 @@ export const servicePages: Record<string, ServicePageContent> = {
   [routes.acRepair]: {
     path: routes.acRepair,
     title: "AC Repair",
-    metaTitle: "AC Repair in Midvale & the Salt Lake Valley | Paul Brothers",
+    metaTitle: "AC Repair Across the Salt Lake Valley | Paul Brothers",
     metaDescription:
-      "Fast AC repair in Midvale and the Salt Lake Valley. Same-day and 24/7 emergency air conditioning service, honest diagnostics, and free estimates. Call 385-787-8077.",
-    headline: "AC Repair in Midvale & the Salt Lake Valley",
+      "Fast AC repair across the Salt Lake Valley. Same-day and 24/7 emergency air conditioning service, honest diagnostics, and free estimates. Call 385-787-8077.",
+    headline: "AC Repair Across the Salt Lake Valley",
     intro:
-      "When Utah summers heat up, your air conditioner has to keep up. Paul Brothers Heating & Air provides expert AC repair for homeowners and businesses in Midvale and across the Salt Lake Valley — with same-day service when available and 24/7 emergency help.",
+      "When Utah summers heat up, your air conditioner has to keep up. Paul Brothers Heating & Air provides expert AC repair for homeowners and businesses across the Salt Lake Valley — with same-day service when available and 24/7 emergency help.",
     highlights: [
       "All major AC brands",
       "Carrier, Trane, Rheem & more",
@@ -59,7 +59,7 @@ export const servicePages: Record<string, ServicePageContent> = {
         title: "Expert Air Conditioner Repair",
         paragraphs: [
           "Summers in Utah can be intense. When your AC blows warm air, won't turn on, or struggles to keep up, you need a local HVAC team that responds fast and explains your options clearly.",
-          "Our Midvale-based technicians diagnose refrigerant issues, compressors, capacitors, thermostats, airflow restrictions, and electrical faults. We work on all makes and models and always walk you through repair versus replacement before any work begins.",
+          "Our local technicians diagnose refrigerant issues, compressors, capacitors, thermostats, airflow restrictions, and electrical faults. We work on all makes and models and always walk you through repair versus replacement before any work begins.",
         ],
       },
       {
@@ -111,13 +111,13 @@ export const servicePages: Record<string, ServicePageContent> = {
       },
       {
         id: "why-us",
-        title: "Why Midvale Homeowners Choose Paul Brothers",
+        title: "Why Salt Lake Valley Homeowners Choose Paul Brothers",
         bullets: [
           "Family-owned company with nearly 200 five-star reviews",
           "Licensed, insured, and BBB A+ Accredited",
           "Free estimates and no-pressure second opinions",
           "Honest repair-versus-replace recommendations",
-          "Based in Midvale — fast response across the valley",
+          "Fast response across the Salt Lake Valley",
         ],
       },
     ],
@@ -151,9 +151,9 @@ export const servicePages: Record<string, ServicePageContent> = {
           "Yes. We provide 24/7 emergency AC repair across the Salt Lake Valley, including Midvale, Sandy, Murray, West Jordan, and nearby communities.",
       },
       {
-        question: "How fast can you get to Midvale?",
+        question: "How fast can you respond in the Salt Lake Valley?",
         answer:
-          "We're based in Midvale and serve the valley daily. Many calls are scheduled same-day — call or text for the soonest available appointment.",
+          "We serve the Salt Lake Valley daily from our local home base. Many calls are scheduled same-day — call or text for the soonest available appointment.",
       },
       {
         question: "What AC brands do you repair?",
@@ -180,12 +180,12 @@ export const servicePages: Record<string, ServicePageContent> = {
   [routes.furnaceRepair]: {
     path: routes.furnaceRepair,
     title: "Furnace Repair",
-    metaTitle: "Furnace Repair in Midvale & the Salt Lake Valley | Paul Brothers",
+    metaTitle: "Furnace Repair Across the Salt Lake Valley | Paul Brothers",
     metaDescription:
-      "Furnace repair in Midvale and the Salt Lake Valley. 24/7 emergency heating repair, safety-focused diagnostics, and free estimates. Licensed technicians. Call 385-787-8077.",
-    headline: "Furnace Repair in Midvale & the Salt Lake Valley",
+      "Furnace repair across the Salt Lake Valley. 24/7 emergency heating repair, safety-focused diagnostics, and free estimates. Licensed technicians. Call 385-787-8077.",
+    headline: "Furnace Repair Across the Salt Lake Valley",
     intro:
-      "No heat on a cold Utah night is stressful. Paul Brothers Heating & Air provides reliable furnace repair and emergency heating service throughout Midvale and the Salt Lake Valley — with safety-focused diagnostics and fair, upfront pricing.",
+      "No heat on a cold Utah night is stressful. Paul Brothers Heating & Air provides reliable furnace repair and emergency heating service throughout the Salt Lake Valley — with safety-focused diagnostics and fair, upfront pricing.",
     highlights: [
       "Furnace & heat pump repair",
       "24/7 emergency heating service",
@@ -199,7 +199,7 @@ export const servicePages: Record<string, ServicePageContent> = {
         id: "overview",
         title: "Reliable Heater Repair for Valley Homes",
         paragraphs: [
-          "When the forecast calls for cold weather, the last thing you want is a furnace that won't start. Paul Brothers has helped Midvale and Salt Lake Valley homeowners restore heat quickly for years — earning strong reviews for honest work and fast response.",
+          "When the forecast calls for cold weather, the last thing you want is a furnace that won't start. Paul Brothers has helped Salt Lake Valley homeowners restore heat quickly for years — earning strong reviews for honest work and fast response.",
           "Our technicians repair ignitors, blower motors, heat exchangers, limit switches, thermostats, and more. Every job is code-compliant, and we always explain repair-versus-replace options before you commit.",
         ],
       },
@@ -313,19 +313,19 @@ export const servicePages: Record<string, ServicePageContent> = {
     ],
     cta: {
       headline: "No Heat? We're On the Way.",
-      subtext: "24/7 emergency furnace repair in Midvale and the Salt Lake Valley. Call or text now.",
+      subtext: "24/7 emergency furnace repair across the Salt Lake Valley. Call or text now.",
     },
   },
 
   [routes.hvacInstallation]: {
     path: routes.hvacInstallation,
     title: "HVAC Installation",
-    metaTitle: "AC & Furnace Installation in Midvale, UT | Paul Brothers",
+    metaTitle: "HVAC Installation Across the Salt Lake Valley | Paul Brothers",
     metaDescription:
-      "AC and furnace installation and replacement in Midvale and the Salt Lake Valley. Free estimates, quality equipment, and professional installs. Call Paul Brothers Heating & Air.",
-    headline: "AC & Furnace Installation / Replacement",
+      "AC and furnace installation and replacement across the Salt Lake Valley. Free estimates, quality equipment, and professional installs. Call Paul Brothers Heating & Air.",
+    headline: "HVAC Installation Across the Salt Lake Valley",
     intro:
-      "Whether you're replacing an aging system, building new, or upgrading for better efficiency — Paul Brothers installs air conditioners, furnaces, and complete HVAC systems for Midvale and Salt Lake Valley homes and businesses.",
+      "Whether you're replacing an aging system, building new, or upgrading for better efficiency — Paul Brothers installs air conditioners, furnaces, and complete HVAC systems for homes and businesses across the Salt Lake Valley.",
     highlights: [
       "AC installation & replacement",
       "Furnace installation & replacement",
@@ -445,19 +445,19 @@ export const servicePages: Record<string, ServicePageContent> = {
     ],
     cta: {
       headline: "Ready for a New System?",
-      subtext: "Get a free installation estimate from Paul Brothers — Midvale's trusted HVAC team.",
+      subtext: "Get a free installation estimate from Paul Brothers — your trusted Salt Lake Valley HVAC team.",
     },
   },
 
   [routes.hvacMaintenance]: {
     path: routes.hvacMaintenance,
     title: "HVAC Maintenance",
-    metaTitle: "HVAC Maintenance in Midvale & Salt Lake Valley | Paul Brothers",
+    metaTitle: "HVAC Maintenance Across the Salt Lake Valley | Paul Brothers",
     metaDescription:
-      "Heating and cooling maintenance and tune-ups in Midvale and the Salt Lake Valley. Keep your AC and furnace running efficiently. Schedule a seasonal HVAC checkup today.",
-    headline: "Heating & Cooling Maintenance",
+      "Heating and cooling maintenance and tune-ups across the Salt Lake Valley. Keep your AC and furnace running efficiently. Schedule a seasonal HVAC checkup today.",
+    headline: "HVAC Maintenance Across the Salt Lake Valley",
     intro:
-      "Regular HVAC maintenance catches small problems before they become expensive breakdowns. Paul Brothers provides seasonal AC and furnace tune-ups for homeowners in Midvale and across the Salt Lake Valley.",
+      "Regular HVAC maintenance catches small problems before they become expensive breakdowns. Paul Brothers provides seasonal AC and furnace tune-ups for homeowners across the Salt Lake Valley.",
     highlights: [
       "Spring AC tune-ups",
       "Fall furnace inspections",
@@ -590,10 +590,10 @@ export const servicePages: Record<string, ServicePageContent> = {
   [routes.indoorAirQuality]: {
     path: routes.indoorAirQuality,
     title: "Indoor Air Quality",
-    metaTitle: "Indoor Air Quality Services in Midvale, UT | Paul Brothers",
+    metaTitle: "Indoor Air Quality Services for Utah Homes | Paul Brothers",
     metaDescription:
-      "Indoor air quality services in Midvale and the Salt Lake Valley — air filtration, purifiers, humidifiers, and dehumidifiers. Breathe easier at home. Free estimates.",
-    headline: "Indoor Air Quality Services",
+      "Indoor air quality services for Utah homes — air filtration, purifiers, humidifiers, and dehumidifiers across the Salt Lake Valley. Breathe easier at home. Free estimates.",
+    headline: "Indoor Air Quality Services for Utah Homes",
     intro:
       "Indoor air pollution is often worse than outdoor air. Dust, allergens, dry winter air, and poor filtration affect your family's comfort and health. Paul Brothers installs and services whole-home air quality solutions integrated with your HVAC system.",
     highlights: [
@@ -690,7 +690,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       {
         question: "Do I need a whole-home system or portable units?",
         answer:
-          "Whole-home systems treat every room through your ductwork and require less daily maintenance than portable units. For most Midvale homeowners, integrated solutions deliver better results.",
+          "Whole-home systems treat every room through your ductwork and require less daily maintenance than portable units. For most Utah homeowners, integrated solutions deliver better results.",
       },
       {
         question: "Can you add a humidifier to my existing furnace?",
@@ -717,10 +717,10 @@ export const servicePages: Record<string, ServicePageContent> = {
   [routes.ductwork]: {
     path: routes.ductwork,
     title: "Ductwork",
-    metaTitle: "Ductwork Repair & Installation in Midvale, UT | Paul Brothers",
+    metaTitle: "Ductwork Repair & Installation in the Salt Lake Valley | Paul Brothers",
     metaDescription:
-      "Duct repair, sealing, and installation in Midvale and the Salt Lake Valley. Fix hot and cold spots and improve HVAC efficiency. Call for a free estimate.",
-    headline: "Ductwork Repair & Installation",
+      "Duct repair, sealing, and installation across the Salt Lake Valley. Fix hot and cold spots and improve HVAC efficiency. Call for a free estimate.",
+    headline: "Ductwork Repair & Installation in the Salt Lake Valley",
     intro:
       "Most Utah homes use forced-air heating and cooling — and that means ductwork matters. Leaky, damaged, or poorly designed ducts waste energy and create hot and cold spots. Paul Brothers repairs, seals, and installs ductwork so conditioned air reaches every room.",
     highlights: [
@@ -737,7 +737,7 @@ export const servicePages: Record<string, ServicePageContent> = {
         title: "Complete Ductwork Services",
         paragraphs: [
           "Your ducts are the delivery system for all heated and cooled air in your home. When they leak, sag, or were poorly designed, you pay more on utility bills and still can't get comfortable.",
-          "Paul Brothers provides duct repair, sealing, replacement, and new construction design throughout Midvale and the Salt Lake Valley. We use advanced diagnostic tools to find problems other companies miss.",
+          "Paul Brothers provides duct repair, sealing, replacement, and new construction design throughout the Salt Lake Valley. We use advanced diagnostic tools to find problems other companies miss.",
         ],
       },
       {
@@ -846,10 +846,10 @@ export const servicePages: Record<string, ServicePageContent> = {
   [routes.commercialHvac]: {
     path: routes.commercialHvac,
     title: "Commercial HVAC",
-    metaTitle: "Commercial HVAC in Midvale & Salt Lake Valley | Paul Brothers",
+    metaTitle: "Commercial HVAC Services in the Salt Lake Valley | Paul Brothers",
     metaDescription:
-      "Commercial HVAC repair, maintenance, and installation in Midvale and the Salt Lake Valley. Keep your business comfortable. Free estimates — call Paul Brothers.",
-    headline: "Commercial HVAC Services",
+      "Commercial HVAC repair, maintenance, and installation across the Salt Lake Valley. Keep your business comfortable. Free estimates — call Paul Brothers.",
+    headline: "Commercial HVAC Services in the Salt Lake Valley",
     intro:
       "HVAC problems disrupt your team, your customers, and your bottom line. Paul Brothers provides commercial heating and cooling repair, maintenance, and installation for offices, retail, restaurants, and light commercial properties across the Salt Lake Valley.",
     highlights: [
@@ -866,7 +866,7 @@ export const servicePages: Record<string, ServicePageContent> = {
         title: "HVAC for Utah Businesses",
         paragraphs: [
           "Commercial HVAC systems are larger, more complex, and more critical to daily operations than residential equipment. When your system fails, you need a contractor who responds fast, communicates clearly, and gets your business back to comfortable ASAP.",
-          "Paul Brothers serves light commercial properties throughout Midvale and the Salt Lake Valley — from offices and retail spaces to restaurants and small warehouses. We prioritize minimal downtime and transparent pricing on every commercial call.",
+          "Paul Brothers serves light commercial properties throughout the Salt Lake Valley — from offices and retail spaces to restaurants and small warehouses. We prioritize minimal downtime and transparent pricing on every commercial call.",
         ],
       },
       {

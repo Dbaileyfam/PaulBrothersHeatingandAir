@@ -245,10 +245,10 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
       </section>
 
       <CTABanner
-        headline={content.cta?.headline ?? "Need HVAC Help in Midvale?"}
+        headline={content.cta?.headline ?? "Need HVAC Help in the Salt Lake Valley?"}
         subtext={
           content.cta?.subtext ??
-          "Call or text for a free estimate or 24/7 emergency service in the Salt Lake Valley."
+          "Call or text for a free estimate or 24/7 emergency service across the Salt Lake Valley."
         }
       />
     </>
