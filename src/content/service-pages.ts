@@ -193,7 +193,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       "No heat on a cold Utah night is stressful. Paul Brothers Heating & Air provides reliable furnace repair and emergency heating service throughout the Salt Lake Valley — with safety-focused diagnostics and fair, upfront pricing.",
     heroImage: {
       src: "images/services/furnace-repair.jpg",
-      alt: "Warm, comfortable living room heated by a reliable furnace",
+      alt: "Technician repairing furnace electrical components and wiring",
     },
     highlights: [
       "Furnace & heat pump repair",
