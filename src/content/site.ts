@@ -5,13 +5,13 @@ import { routes } from "@/lib/routes";
 export const site = {
   name: "Paul Brothers Heating & Air",
   shortName: "Paul Brothers",
-  tagline: "HVAC Company in Midvale, UT",
+  tagline: "Trusted HVAC Service Across the Salt Lake Valley",
   description:
     "Midvale-based HVAC company serving the Salt Lake Valley. AC repair, furnace repair, installation, maintenance, and 24/7 emergency service. Call for a free estimate.",
   hero: {
-    headline: "HVAC Company in Midvale, UT",
+    headline: "Trusted HVAC Service Across the Salt Lake Valley",
     subheadline:
-      "Licensed, family-owned heating and cooling service for Midvale and the Salt Lake Valley. Call or text for AC repair, furnace repair, free estimates, and 24/7 emergency help.",
+      "Licensed, family-owned heating and cooling service across the Salt Lake Valley. Call or text for AC repair, furnace repair, free estimates, and 24/7 emergency help.",
   },
   phone: "385-787-8077",
   phoneHref: "tel:+13857878077",

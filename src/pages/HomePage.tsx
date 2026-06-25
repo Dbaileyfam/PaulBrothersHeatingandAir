@@ -10,7 +10,7 @@ export function HomePage() {
   return (
     <>
       <PageMeta
-        title="HVAC Company in Midvale, UT | Paul Brothers Heating & Air"
+        title="Trusted HVAC Service Across the Salt Lake Valley | Paul Brothers Heating & Air"
         description={site.description}
         path={routes.home}
       />
