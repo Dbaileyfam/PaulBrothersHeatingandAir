@@ -33,10 +33,26 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
           <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
             {content.title}
           </p>
-          <h1 className="mt-2 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            {content.headline}
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/90">
+
+          <div className="mt-2 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8 lg:gap-12">
+            <h1 className="flex-1 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+              {content.headline}
+            </h1>
+
+            <div className="w-full shrink-0 overflow-hidden rounded-2xl border border-white/15 shadow-2xl shadow-black/30 sm:max-w-[280px] lg:max-w-[420px]">
+              <img
+                src={`${import.meta.env.BASE_URL}${content.heroImage.src}`}
+                alt={content.heroImage.alt}
+                width={900}
+                height={675}
+                className="aspect-[4/3] w-full object-cover"
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
+          </div>
+
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90 lg:mt-8">
             {content.intro}
           </p>
           <div className="mt-8">

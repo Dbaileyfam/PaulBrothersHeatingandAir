@@ -26,6 +26,7 @@ export type ServicePageContent = {
   metaDescription: string;
   headline: string;
   intro: string;
+  heroImage: { src: string; alt: string };
   highlights: string[];
   sections: ServiceSection[];
   process?: ServiceProcessStep[];
@@ -45,6 +46,10 @@ export const servicePages: Record<string, ServicePageContent> = {
     headline: "AC Repair Across the Salt Lake Valley",
     intro:
       "When Utah summers heat up, your air conditioner has to keep up. Paul Brothers Heating & Air provides expert AC repair for homeowners and businesses across the Salt Lake Valley — with same-day service when available and 24/7 emergency help.",
+    heroImage: {
+      src: "images/services/ac-repair.jpg",
+      alt: "HVAC technician servicing an air conditioning unit",
+    },
     highlights: [
       "All major AC brands",
       "Carrier, Trane, Rheem & more",
@@ -186,6 +191,10 @@ export const servicePages: Record<string, ServicePageContent> = {
     headline: "Furnace Repair Across the Salt Lake Valley",
     intro:
       "No heat on a cold Utah night is stressful. Paul Brothers Heating & Air provides reliable furnace repair and emergency heating service throughout the Salt Lake Valley — with safety-focused diagnostics and fair, upfront pricing.",
+    heroImage: {
+      src: "images/services/furnace-repair.jpg",
+      alt: "Warm, comfortable living room heated by a reliable furnace",
+    },
     highlights: [
       "Furnace & heat pump repair",
       "24/7 emergency heating service",
@@ -326,6 +335,10 @@ export const servicePages: Record<string, ServicePageContent> = {
     headline: "HVAC Installation Across the Salt Lake Valley",
     intro:
       "Whether you're replacing an aging system, building new, or upgrading for better efficiency — Paul Brothers installs air conditioners, furnaces, and complete HVAC systems for homes and businesses across the Salt Lake Valley.",
+    heroImage: {
+      src: "images/services/hvac-installation.jpg",
+      alt: "HVAC technician installing heating and cooling equipment",
+    },
     highlights: [
       "AC installation & replacement",
       "Furnace installation & replacement",
@@ -458,6 +471,10 @@ export const servicePages: Record<string, ServicePageContent> = {
     headline: "HVAC Maintenance Across the Salt Lake Valley",
     intro:
       "Regular HVAC maintenance catches small problems before they become expensive breakdowns. Paul Brothers provides seasonal AC and furnace tune-ups for homeowners across the Salt Lake Valley.",
+    heroImage: {
+      src: "images/services/hvac-maintenance.jpg",
+      alt: "Technician performing HVAC system maintenance",
+    },
     highlights: [
       "Spring AC tune-ups",
       "Fall furnace inspections",
@@ -596,6 +613,10 @@ export const servicePages: Record<string, ServicePageContent> = {
     headline: "Indoor Air Quality Services for Utah Homes",
     intro:
       "Indoor air pollution is often worse than outdoor air. Dust, allergens, dry winter air, and poor filtration affect your family's comfort and health. Paul Brothers installs and services whole-home air quality solutions integrated with your HVAC system.",
+    heroImage: {
+      src: "images/services/indoor-air-quality.jpg",
+      alt: "Clean, healthy indoor air quality products for the home",
+    },
     highlights: [
       "Whole-home air filtration",
       "Air purifiers & UV systems",
@@ -723,6 +744,10 @@ export const servicePages: Record<string, ServicePageContent> = {
     headline: "Ductwork Repair & Installation in the Salt Lake Valley",
     intro:
       "Most Utah homes use forced-air heating and cooling — and that means ductwork matters. Leaky, damaged, or poorly designed ducts waste energy and create hot and cold spots. Paul Brothers repairs, seals, and installs ductwork so conditioned air reaches every room.",
+    heroImage: {
+      src: "images/services/ductwork.jpg",
+      alt: "Architectural ceiling showing ductwork and ventilation design",
+    },
     highlights: [
       "Duct leak detection & sealing",
       "Duct repair & replacement",
@@ -852,6 +877,10 @@ export const servicePages: Record<string, ServicePageContent> = {
     headline: "Commercial HVAC Services in the Salt Lake Valley",
     intro:
       "HVAC problems disrupt your team, your customers, and your bottom line. Paul Brothers provides commercial heating and cooling repair, maintenance, and installation for offices, retail, restaurants, and light commercial properties across the Salt Lake Valley.",
+    heroImage: {
+      src: "images/services/commercial-hvac.jpg",
+      alt: "Modern commercial building with professional HVAC systems",
+    },
     highlights: [
       "Commercial AC & heating repair",
       "Preventive maintenance plans",
