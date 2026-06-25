@@ -3,7 +3,7 @@ import { Layout } from "@/components/Layout";
 import { HomePage } from "@/pages/HomePage";
 import { ServicesPage } from "@/pages/ServicesPage";
 import { ServiceAreasPage } from "@/pages/ServiceAreasPage";
-import { ReviewsPage } from "@/pages/ReviewsPage";
+import { AboutUsPage } from "@/pages/AboutUsPage";
 import {
   AcRepairPage,
   FurnaceRepairPage,
@@ -60,8 +60,8 @@ export const router = createBrowserRouter(
         { path: "commercial-hvac", element: redirect(routes.commercialHvac) },
         { path: "service-areas/", element: <ServiceAreasPage /> },
         { path: "service-areas", element: redirect(routes.serviceAreas) },
-        { path: "reviews/", element: <ReviewsPage /> },
-        { path: "reviews", element: redirect(routes.reviews) },
+        { path: "about-us/", element: <AboutUsPage /> },
+        { path: "about-us", element: redirect(routes.aboutUs) },
         { path: "contact/", element: <ContactPage /> },
         { path: "contact", element: redirect(routes.contact) },
         ...legacyRoutes,

@@ -60,7 +60,7 @@ export function ContactButtons({
       ) : null}
       {showReviews ? (
         <Link
-          to={`${routes.reviews}#customer-reviews`}
+          to={`${routes.aboutUs}#customer-reviews`}
           className={`inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/25 bg-white/10 font-semibold text-white transition hover:bg-white/20 ${sizeStyles[size]}`}
         >
           <Star className="h-4 w-4 shrink-0" aria-hidden />

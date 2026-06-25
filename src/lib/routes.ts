@@ -10,7 +10,7 @@ export const routes = {
   ductwork: "/ductwork/",
   commercialHvac: "/commercial-hvac/",
   serviceAreas: "/service-areas/",
-  reviews: "/reviews/",
+  aboutUs: "/about-us/",
   contact: "/contact/",
 } as const;
 
@@ -28,8 +28,8 @@ export const serviceRoutes = [
 
 /** Old URLs → new canonical paths (client-side redirects). */
 export const legacyRedirects: Record<string, RoutePath> = {
-  "/about-us/": routes.reviews,
-  "/about-us": routes.reviews,
+  "/reviews/": routes.aboutUs,
+  "/reviews": routes.aboutUs,
   "/air-conditioning/": routes.acRepair,
   "/air-conditioning": routes.acRepair,
   "/heating/": routes.furnaceRepair,

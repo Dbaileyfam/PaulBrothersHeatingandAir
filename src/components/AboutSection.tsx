@@ -37,10 +37,10 @@ export function AboutSection({ compact = false }: AboutSectionProps) {
           </p>
           {compact ? (
             <Link
-              to={routes.reviews}
+              to={routes.aboutUs}
               className="mt-6 inline-flex text-sm font-semibold text-pb-orange transition hover:text-white"
             >
-              Read our reviews →
+              Learn more about us →
             </Link>
           ) : null}
         </div>

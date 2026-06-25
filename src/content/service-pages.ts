@@ -47,8 +47,8 @@ export const servicePages: Record<string, ServicePageContent> = {
     intro:
       "When Utah summers heat up, your air conditioner has to keep up. Paul Brothers Heating & Air provides expert AC repair for homeowners and businesses across the Salt Lake Valley — with same-day service when available and 24/7 emergency help.",
     heroImage: {
-      src: "images/services/ac-repair.jpg",
-      alt: "HVAC technician servicing an air conditioning unit",
+      src: "images/services/ac-repair.webp",
+      alt: "Air conditioning repair service",
     },
     highlights: [
       "All major AC brands",

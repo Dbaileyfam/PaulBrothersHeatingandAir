@@ -64,9 +64,8 @@ export const statewideAvailabilityNote =
 export const footerServiceArea = statewideAvailabilityNote;
 
 export const navLinks = [
-  { to: routes.home, label: "Home" },
   { to: routes.serviceAreas, label: "Service Areas" },
-  { to: routes.reviews, label: "Reviews" },
+  { to: routes.aboutUs, label: "About Us" },
   { to: routes.contact, label: "Contact" },
 ] as const;
 
@@ -260,13 +259,17 @@ export const serviceAreasPage = {
   ],
 } as const;
 
-export const reviewsPage = {
-  metaTitle: "Customer Reviews | Paul Brothers Heating & Air | Midvale, UT",
+export const aboutUsPage = {
+  metaTitle: "About Us | Paul Brothers Heating & Air | Salt Lake Valley",
   metaDescription:
-    "Read 5-star Google reviews for Paul Brothers Heating & Air — a Midvale HVAC company serving the Salt Lake Valley. Nearly 200 customer reviews.",
-  headline: "Customer Reviews",
+    "Learn about Paul Brothers Heating & Air — a family-owned HVAC company serving the Salt Lake Valley. Read customer reviews, meet our team values, and see why homeowners trust us.",
+  headline: "About Paul Brothers Heating & Air",
   intro:
-    "Paul Brothers earns strong reviews for honest pricing, fast response, and dependable HVAC work across the Salt Lake Valley.",
+    "Family-owned, licensed, and BBB A+ Accredited — Paul Brothers has built a reputation across the Salt Lake Valley for honest HVAC work, fair pricing, and fast response.",
+  body: [
+    "Paul Brothers Heating & Air is a mobile HVAC company based in Midvale, Utah. We come to you for AC repair, furnace repair, installations, maintenance, and 24/7 emergency service throughout the Salt Lake Valley.",
+    "Our technicians treat your home like their own — with clear communication, upfront pricing, and no-pressure recommendations. That approach has earned us nearly 200 five-star reviews from homeowners across Utah.",
+  ],
 } as const;
 
 export const contactPage = {

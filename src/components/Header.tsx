@@ -96,11 +96,20 @@ export function Header() {
           aria-label="Mobile"
         >
           <div className="flex flex-col gap-1">
+            <NavLink
+              to={routes.home}
+              end
+              className={({ isActive }) =>
+                `rounded-lg px-3 py-2.5 text-sm ${navClass(isActive)}`
+              }
+              onClick={() => setOpen(false)}
+            >
+              Home
+            </NavLink>
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
-                end={link.to === routes.home}
                 className={({ isActive }) =>
                   `rounded-lg px-3 py-2.5 text-sm ${navClass(isActive)}`
                 }
