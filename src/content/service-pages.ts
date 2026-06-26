@@ -746,7 +746,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       "Most Utah homes use forced-air heating and cooling — and that means ductwork matters. Leaky, damaged, or poorly designed ducts waste energy and create hot and cold spots. Paul Brothers repairs, seals, and installs ductwork so conditioned air reaches every room.",
     heroImage: {
       src: "images/services/ductwork.jpg",
-      alt: "Architectural ceiling showing ductwork and ventilation design",
+      alt: "HVAC technician inspecting ductwork with a flashlight",
     },
     highlights: [
       "Duct leak detection & sealing",
