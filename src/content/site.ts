@@ -123,6 +123,10 @@ export const servicesPage = {
   headline: "All HVAC Services",
   intro:
     "Paul Brothers Heating & Air is your Midvale-based HVAC team for repairs, installations, maintenance, and emergency service across the Salt Lake Valley.",
+  heroImage: {
+    src: "images/services/hvac-services.jpg",
+    alt: "HVAC technician testing refrigerant pressure on an air conditioning unit",
+  },
 } as const;
 
 export const serviceAreasPage = {
