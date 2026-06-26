@@ -17,9 +17,14 @@ export function ServicesPage() {
       <section className="bg-gradient-to-br from-pb-navy via-pb-navy-light to-pb-sky py-14 text-white sm:py-18">
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8 lg:gap-12">
-            <h1 className="flex-1 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              {servicesPage.headline}
-            </h1>
+            <div className="flex-1">
+              <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+                {servicesPage.headline}
+              </h1>
+              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/90">
+                {servicesPage.intro}
+              </p>
+            </div>
 
             <div className="w-full shrink-0 overflow-hidden rounded-2xl border border-white/15 shadow-2xl shadow-black/30 sm:max-w-[280px] lg:max-w-[420px]">
               <img
@@ -33,10 +38,6 @@ export function ServicesPage() {
               />
             </div>
           </div>
-
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90 lg:mt-8">
-            {servicesPage.intro}
-          </p>
         </div>
       </section>
 
