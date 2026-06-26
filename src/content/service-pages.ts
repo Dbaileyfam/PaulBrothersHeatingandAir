@@ -337,7 +337,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       "Whether you're replacing an aging system, building new, or upgrading for better efficiency — Paul Brothers installs air conditioners, furnaces, and complete HVAC systems for homes and businesses across the Salt Lake Valley.",
     heroImage: {
       src: "images/services/hvac-installation.jpg",
-      alt: "HVAC technician installing heating and cooling equipment",
+      alt: "HVAC technician installing ductwork in a residential attic",
     },
     highlights: [
       "AC installation & replacement",
