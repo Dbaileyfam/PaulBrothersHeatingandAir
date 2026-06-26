@@ -615,7 +615,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       "Indoor air pollution is often worse than outdoor air. Dust, allergens, dry winter air, and poor filtration affect your family's comfort and health. Paul Brothers installs and services whole-home air quality solutions integrated with your HVAC system.",
     heroImage: {
       src: "images/services/indoor-air-quality.jpg",
-      alt: "Clean, healthy indoor air quality products for the home",
+      alt: "Air Quality Index gauge showing indoor air quality levels",
     },
     highlights: [
       "Whole-home air filtration",
