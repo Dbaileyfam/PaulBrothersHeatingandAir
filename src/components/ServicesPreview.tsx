@@ -29,7 +29,7 @@ export function ServicesPreview() {
                   <Icon className="h-6 w-6" aria-hidden />
                 </div>
                 <h3 className="text-lg font-bold text-white">{service.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">
+                <p className="mt-1 flex-1 text-sm leading-relaxed text-white/70">
                   {service.summary}
                 </p>
                 <Link

@@ -21,7 +21,7 @@ export function ServicesPage() {
               <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                 {servicesPage.headline}
               </h1>
-              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/90">
+              <p className="mt-3 max-w-3xl text-lg leading-relaxed text-white/90">
                 {servicesPage.intro}
               </p>
             </div>
@@ -56,7 +56,7 @@ export function ServicesPage() {
                     >
                       <h2 className="text-lg font-bold text-white">{link.label}</h2>
                       {card ? (
-                        <p className="mt-2 flex-1 text-sm text-white/70">{card.summary}</p>
+                        <p className="mt-1 flex-1 text-sm text-white/70">{card.summary}</p>
                       ) : null}
                       <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-sky-300 group-hover:text-white">
                         Learn more

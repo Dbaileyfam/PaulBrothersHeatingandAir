@@ -35,9 +35,14 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
           </p>
 
           <div className="mt-2 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8 lg:gap-12">
-            <h1 className="flex-1 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              {content.headline}
-            </h1>
+            <div className="flex-1">
+              <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+                {content.headline}
+              </h1>
+              <p className="mt-3 max-w-3xl text-lg leading-relaxed text-white/90">
+                {content.intro}
+              </p>
+            </div>
 
             <div className="w-full shrink-0 overflow-hidden rounded-2xl border border-white/15 shadow-2xl shadow-black/30 sm:max-w-[280px] lg:max-w-[420px]">
               <img
@@ -51,10 +56,6 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
               />
             </div>
           </div>
-
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90 lg:mt-8">
-            {content.intro}
-          </p>
           <div className="mt-8">
             <ContactButtons size="lg" showEstimate />
           </div>
@@ -71,8 +72,11 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
                 <article key={section.id} id={section.id} className="scroll-mt-28">
                   <h2 className="section-heading">{section.title}</h2>
 
-                  {section.paragraphs?.map((paragraph) => (
-                    <p key={paragraph} className="mt-4 pb-page-body">
+                  {section.paragraphs?.map((paragraph, index) => (
+                    <p
+                      key={paragraph}
+                      className={`pb-page-body ${index === 0 ? "mt-2" : "mt-3"}`}
+                    >
                       {paragraph}
                     </p>
                   ))}
@@ -105,7 +109,7 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
               {content.process && content.process.length > 0 ? (
                 <article id="process" className="scroll-mt-28">
                   <h2 className="section-heading">How It Works</h2>
-                  <p className="section-subheading">
+                  <p className="mt-2 max-w-2xl text-lg text-white/70">
                     From your first call to a comfortable home — here's what to
                     expect.
                   </p>
@@ -118,7 +122,7 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
               {content.brands && content.brands.length > 0 ? (
                 <article id="brands" className="scroll-mt-28">
                   <h2 className="section-heading">Brands We Service</h2>
-                  <p className="section-subheading">
+                  <p className="mt-2 max-w-2xl text-lg text-white/70">
                     Our technicians work on all major equipment brands.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2">
@@ -215,7 +219,7 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
         >
           <div className="mx-auto max-w-3xl px-4">
             <h2 className="section-heading">Common Questions</h2>
-            <p className="section-subheading">
+            <p className="mt-2 max-w-2xl text-lg text-white/70">
               Tap a question to see the answer.
             </p>
             <div className="mt-8">
