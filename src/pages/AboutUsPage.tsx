@@ -51,6 +51,9 @@ export function AboutUsPage() {
         </div>
       </section>
 
+      <AboutSection />
+      <CustomerReviews />
+
       <section
         id="service-areas"
         className="scroll-mt-28 border-t border-white/10 py-14 sm:py-18"
@@ -112,8 +115,6 @@ export function AboutUsPage() {
         </div>
       </section>
 
-      <AboutSection />
-      <CustomerReviews />
       <CTABanner headline="Ready to Work With Paul Brothers?" />
     </>
   );
