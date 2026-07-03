@@ -1,8 +1,9 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { EmergencyBar } from "./EmergencyBar";
 import { CursorSparkles } from "./CursorSparkles";
+import { PageTransition } from "./PageTransition";
 
 export function Layout() {
   return (
@@ -12,7 +13,7 @@ export function Layout() {
         <Header />
         <EmergencyBar />
         <main>
-          <Outlet />
+          <PageTransition />
         </main>
         <Footer />
       </div>
