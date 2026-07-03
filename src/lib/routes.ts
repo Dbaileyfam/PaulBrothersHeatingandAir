@@ -9,12 +9,14 @@ export const routes = {
   indoorAirQuality: "/indoor-air-quality/",
   ductwork: "/ductwork/",
   commercialHvac: "/commercial-hvac/",
-  serviceAreas: "/service-areas/",
   aboutUs: "/about-us/",
   contact: "/contact/",
 } as const;
 
 export type RoutePath = (typeof routes)[keyof typeof routes];
+
+/** About Us section for service coverage (also used by legacy URL redirects). */
+export const aboutUsServiceAreasHash = `${routes.aboutUs}#service-areas`;
 
 export const serviceRoutes = [
   routes.acRepair,
@@ -27,7 +29,7 @@ export const serviceRoutes = [
 ] as const;
 
 /** Old URLs → new canonical paths (client-side redirects). */
-export const legacyRedirects: Record<string, RoutePath> = {
+export const legacyRedirects: Record<string, string> = {
   "/reviews/": routes.aboutUs,
   "/reviews": routes.aboutUs,
   "/air-conditioning/": routes.acRepair,
@@ -40,8 +42,10 @@ export const legacyRedirects: Record<string, RoutePath> = {
   "/emergency-hvac-repair": routes.acRepair,
   "/contact-us/": routes.contact,
   "/contact-us": routes.contact,
-  "/statewide-hvac-service-utah/": routes.serviceAreas,
-  "/statewide-hvac-service-utah": routes.serviceAreas,
+  "/service-areas/": aboutUsServiceAreasHash,
+  "/service-areas": aboutUsServiceAreasHash,
+  "/statewide-hvac-service-utah/": aboutUsServiceAreasHash,
+  "/statewide-hvac-service-utah": aboutUsServiceAreasHash,
   "/blog/": routes.home,
   "/blog": routes.home,
 };

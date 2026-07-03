@@ -64,7 +64,6 @@ export const statewideAvailabilityNote =
 export const footerServiceArea = statewideAvailabilityNote;
 
 export const navLinks = [
-  { to: routes.serviceAreas, label: "Service Areas" },
   { to: routes.aboutUs, label: "About Us" },
   { to: routes.contact, label: "Contact" },
 ] as const;
@@ -129,11 +128,8 @@ export const servicesPage = {
   },
 } as const;
 
-export const serviceAreasPage = {
-  metaTitle: "HVAC Service Areas | Wasatch Front & Salt Lake Valley | Paul Brothers",
-  metaDescription:
-    "Paul Brothers Heating & Air serves the Wasatch Front — Midvale, Salt Lake City, Provo, Ogden, Park City, and communities across the Salt Lake Valley, Utah Valley, Davis, Weber, and Tooele counties.",
-  headline: "HVAC Service Areas",
+export const serviceAreasSection = {
+  headline: "Areas We Serve",
   intro:
     "We're based in Midvale and serve homeowners and businesses throughout the Wasatch Front — from the Salt Lake Valley to Utah Valley, Davis and Weber counties, and nearby mountain communities.",
   regions: [
@@ -266,7 +262,7 @@ export const serviceAreasPage = {
 export const aboutUsPage = {
   metaTitle: "About Us | Paul Brothers Heating & Air | Salt Lake Valley",
   metaDescription:
-    "Learn about Paul Brothers Heating & Air — a family-owned HVAC company serving the Salt Lake Valley. Read customer reviews, meet our team values, and see why homeowners trust us.",
+    "Learn about Paul Brothers Heating & Air — a family-owned HVAC company serving Midvale, the Salt Lake Valley, and the Wasatch Front. See our service areas, read reviews, and see why homeowners trust us.",
   headline: "About Paul Brothers Heating & Air",
   intro:
     "Family-owned, licensed, and BBB A+ Accredited — Paul Brothers has built a reputation across the Salt Lake Valley for honest HVAC work, fair pricing, and fast response.",

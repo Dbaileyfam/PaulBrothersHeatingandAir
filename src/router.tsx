@@ -2,7 +2,6 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { HomePage } from "@/pages/HomePage";
 import { ServicesPage } from "@/pages/ServicesPage";
-import { ServiceAreasPage } from "@/pages/ServiceAreasPage";
 import { AboutUsPage } from "@/pages/AboutUsPage";
 import {
   AcRepairPage,
@@ -58,8 +57,6 @@ export const router = createBrowserRouter(
         { path: "ductwork", element: redirect(routes.ductwork) },
         { path: "commercial-hvac/", element: <CommercialHvacPage /> },
         { path: "commercial-hvac", element: redirect(routes.commercialHvac) },
-        { path: "service-areas/", element: <ServiceAreasPage /> },
-        { path: "service-areas", element: redirect(routes.serviceAreas) },
         { path: "about-us/", element: <AboutUsPage /> },
         { path: "about-us", element: redirect(routes.aboutUs) },
         { path: "contact/", element: <ContactPage /> },
