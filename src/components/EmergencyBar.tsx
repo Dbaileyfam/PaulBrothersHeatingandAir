@@ -11,14 +11,7 @@ export function EmergencyBar() {
           href={site.phoneHref}
           className="underline underline-offset-2 hover:text-white/90"
         >
-          Call {site.phone}
-        </a>{" "}
-        or{" "}
-        <a
-          href={site.textHref}
-          className="underline underline-offset-2 hover:text-white/90"
-        >
-          Text {site.text}
+          Call or text {site.phone}
         </a>
       </p>
     </div>
