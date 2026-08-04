@@ -130,7 +130,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       {
         title: "Call or Text",
         description:
-          "Reach us at 385-787-8077 or text 385-787-7077. Tell us what's happening with your AC and we'll schedule the soonest available appointment — including emergency service when needed.",
+          "Call or text 385-787-8077. Tell us what's happening with your AC and we'll schedule the soonest available appointment — including emergency service when needed.",
       },
       {
         title: "Diagnose",
@@ -558,7 +558,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       {
         title: "Schedule",
         description:
-          "Book a spring AC tune-up or fall furnace inspection before peak season. Call 385-787-8077 or text 385-787-7077 to find a time that works.",
+          "Book a spring AC tune-up or fall furnace inspection before peak season. Call or text 385-787-8077 to find a time that works.",
       },
       {
         title: "Inspect",
@@ -951,7 +951,7 @@ export const servicePages: Record<string, ServicePageContent> = {
       {
         title: "Contact Us",
         description:
-          "Call 385-787-8077 or text 385-787-7077. Describe your commercial HVAC issue or project and we'll schedule a site visit or emergency dispatch.",
+          "Call or text 385-787-8077. Describe your commercial HVAC issue or project and we'll schedule a site visit or emergency dispatch.",
       },
       {
         title: "Site Assessment",

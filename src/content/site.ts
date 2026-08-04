@@ -15,20 +15,31 @@ export const site = {
   },
   phone: "385-787-8077",
   phoneHref: "tel:+13857878077",
-  text: "385-787-7077",
-  textHref: "sms:+13857877077",
+  text: "385-787-8077",
+  textHref: "sms:+13857878077",
   email: "paulbrothersut@gmail.com",
   emailHref: "mailto:paulbrothersut@gmail.com",
+  businessLicense: "10884490-5501",
   address: {
-    street: "7042 Commerce Park Dr #162",
+    street: "PO Box 33",
     city: "Midvale",
     state: "UT",
     zip: "84047",
-    full: "7042 Commerce Park Dr #162, Midvale, UT 84047",
+    full: "PO Box 33, Midvale, UT 84047",
     label: "Mailing Address",
     note: "Mobile service — we come to you.",
     mapsHref:
-      "https://www.google.com/maps/search/?api=1&query=7042+Commerce+Park+Dr+%23162,+Midvale,+UT+84047",
+      "https://www.google.com/maps/search/?api=1&query=PO+Box+33,+Midvale,+UT+84047",
+  },
+  shopAddress: {
+    street: "7355 S 900 E Unit #6R",
+    city: "Midvale",
+    state: "UT",
+    zip: "84047",
+    full: "7355 S 900 E Unit #6R, Midvale, UT 84047",
+    label: "Shop Address",
+    mapsHref:
+      "https://www.google.com/maps/search/?api=1&query=7355+S+900+E+Unit+%236R,+Midvale,+UT+84047",
   },
   trustSignals: [
     {
@@ -275,7 +286,7 @@ export const aboutUsPage = {
 export const contactPage = {
   metaTitle: "Contact Paul Brothers | Free HVAC Estimate | Midvale, UT",
   metaDescription:
-    "Contact Paul Brothers Heating & Air in Midvale for a free HVAC estimate. Call 385-787-8077, text 385-787-7077, or request service online.",
+    "Contact Paul Brothers Heating & Air in Midvale for a free HVAC estimate. Call or text 385-787-8077, or request service online.",
   headline: "Contact / Request Estimate",
   intro:
     "Call, text, or email for a free estimate, emergency service, or a second opinion. We serve Midvale and the Salt Lake Valley daily.",

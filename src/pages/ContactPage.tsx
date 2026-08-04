@@ -99,6 +99,35 @@ export function ContactPage() {
                       </span>
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href={site.shopAddress.mapsHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-white transition hover:text-sky-300"
+                    >
+                      <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-pb-orange" aria-hidden />
+                      <span>
+                        <span className="block text-xs font-semibold uppercase tracking-wide text-white/50">
+                          {site.shopAddress.label}
+                        </span>
+                        <span className="font-semibold">{site.shopAddress.full}</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <span className="flex items-start gap-3 text-white">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center text-xs font-bold text-pb-orange" aria-hidden>
+                        #
+                      </span>
+                      <span>
+                        <span className="block text-xs font-semibold uppercase tracking-wide text-white/50">
+                          Business License
+                        </span>
+                        <span className="font-semibold">{site.businessLicense}</span>
+                      </span>
+                    </span>
+                  </li>
                 </ul>
               </div>
 

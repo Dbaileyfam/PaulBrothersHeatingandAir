@@ -72,6 +72,17 @@ export function Footer() {
                 {site.address.full}
               </li>
               <li>
+                <a
+                  href={site.shopAddress.mapsHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
+                  <span className="text-white/50">{site.shopAddress.label}: </span>
+                  {site.shopAddress.full}
+                </a>
+              </li>
+              <li>
                 <Link to={routes.contact} className="transition hover:text-white">
                   Get a Free Estimate
                 </Link>
@@ -84,6 +95,9 @@ export function Footer() {
           {footerServiceArea}
         </p>
         <p className="mt-3 text-center text-xs text-white/50">
+          Business License #{site.businessLicense}
+        </p>
+        <p className="mt-2 text-center text-xs text-white/50">
           &copy; {year} {site.name}. All rights reserved.
         </p>
       </div>
